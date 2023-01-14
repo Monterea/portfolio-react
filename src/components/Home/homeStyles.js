@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import landingPageBackground from "../../assets/pictures/landingPage/landingPageBackground.jpg";
+import * as palette from "../../App.mainStyles";
 
 export const PageContainer = styled.div`
   top: 55px;
@@ -23,12 +24,13 @@ export const PageContainer = styled.div`
   }
 `;
 export const Introduction = styled.div`
-  color: white;
-  font-family: "Alfa Slab One", cursive;
+  color: ${palette.gold};
+  // color: ${palette.darkBlue};
   font-size: 30px;
   max-width: 800px;
   text-align: center;
   text-shadow: 2px 2px 10px #15104a, 0 0 10px #15104a, 0 0 5px #15104a;
+  //text-shadow: 2px 2px 10px ${palette.white}, 0 0 10px ${palette.white},  0 0 5px ${palette.white};
   padding-bottom: 100px;
   padding-left: 100px;
 `;
@@ -37,14 +39,15 @@ export const H1home = styled.h1`
   flex-direction: column;
   justify-content: center;
   z-index: 4;
+  //  font-family: Libre Baskerville;
   padding-bottom: 110px;
 `;
 export const H1 = styled.h1`
   z-index: 4;
-  font-family: "Alfa Slab One", cursive;
+  //  font-family: "Alfa Slab One", cursive;
   color: white;
   text-align: center;
-  font-size: 5rem;
+  font-size: 6rem;
   text-shadow: 5px 5px 10px #f5a100;
   padding-bottom: 80px;
   @media (max-width: 768px) {
@@ -85,13 +88,17 @@ export const HeroBorder = styled.div`
   border: solid;
   border-color: white;
   border-width: 5px;
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.529), 0 0 5px white,
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.529), 0 0 5px ${palette.white},
     0 0 5px rgba(255, 255, 255, 0.768);
   border-width: 5px;
   margin: auto;
   border-radius: 50%;
   /* background-color: transparent; */
-  background-image: linear-gradient(to bottom right, transparent, #15104a);
+  background-image: linear-gradient(
+    to bottom right,
+    transparent,
+    ${palette.darkBlue}
+  );
 `;
 export const LightsBorderHero = styled.div`
   height: 580px;

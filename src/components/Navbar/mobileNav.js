@@ -60,7 +60,7 @@ export default function MobileNav() {
             <MobMenuItem>
               <MobMenuLink
                 name="mobile nav info"
-                to="/about"
+                to="/skills"
                 onClick={handleClick}
               >
                 INFO
@@ -69,19 +69,10 @@ export default function MobileNav() {
             <MobMenuItem>
               <MobMenuLink
                 name="mobile nav projects"
-                to="/gallery"
+                to="/works"
                 onClick={handleClick}
               >
                 PROJEKTY
-              </MobMenuLink>
-            </MobMenuItem>
-            <MobMenuItem>
-              <MobMenuLink
-                name="mobile nav contact"
-                to="/contact"
-                onClick={handleClick}
-              >
-                KONTAKT
               </MobMenuLink>
             </MobMenuItem>
           </MobMenuList>

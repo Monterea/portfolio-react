@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import landingPageBackgroundDark2 from "../src/assets/pictures/landingPage/landingPageBackgroundDark2.jpg";
+import landingPageBackground from "./assets/pictures/landingPage/landingPageBackground.jpg";
 import purpleNebula6 from "../src/assets/pictures/landingPage/purpleNebula6.jpg";
 
 //COLOR SCHEME
@@ -16,6 +16,15 @@ export const whiteOp01 = "rgba(255,255,255,0.1)";
 export const whiteOp03 = "rgba(255,255,255,0.3)";
 export const whiteOp = "rgba(255,255,255,0.5)";
 
+export const darkBlue = "#15104a";
+export const lightBlue = "#b1e0f0";
+export const greyShadow = "rgba(0, 0, 0, 0.2)";
+export const white = "rgb(255,255,255)";
+export const gold = "#f5a100";
+export const black = "rgb(0,0,0)";
+export const blueShadow = "rgba(27, 27, 94, 0.7)";
+export const darkBlueShadow = "rgba(8, 8, 29, 0.7)";
+
 export const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -25,7 +34,7 @@ export const PageContainer = styled.div`
   width: 100%;
   justify-content: start;
   align-items: center;
-  background-image: url(${landingPageBackgroundDark2});
+  background-image: url(${landingPageBackground});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -11,30 +11,14 @@ export const Navi = styled.nav`
   margin: auto;
   position: fixed;
   z-index: 10;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  ${(props) => {
-    if (props.backgroundStyle === true) {
-      return `
-		transition: 0.6s ease-in-out;
-		background: ${palette.almostBlackOp03};
-		`;
-    } else {
-      return `
-		transition: 0.6s ease-in-out;
-		background-color: ${palette.almostBlack};
-		`;
-    }
-  }}
-  @media (max-width: 500px) {
-    display: none;
-  }
+  background-color: ${palette.darkBlue}; //
 `;
 export const MenuList = styled.ul`
   list-style: none;
   display: flex;
-  width: 60%;
-  max-width: 1000px;
+  width: 40%;
   justify-content: flex-end;
   align-items: center;
 `;
@@ -45,13 +29,24 @@ export const MenuItem = styled.li`
 export const MenuLink = styled(Link)`
   text-decoration: none;
   color: ${palette.whiteFull};
-  font-size: 16px;
+  font-size: 18px;
   &:hover {
-    color: ${palette.lightTurquoise};
+    color: ${palette.gold}; //
   }
 `;
 export const BrandName = styled.div`
-  font-size: 20px;
+  width: 60%;
+  margin-left: 50px;
+  @media (max-width: 500px) {
+    justify-self: flex-start;
+    margin-left: 20px;
+  }
+`;
+export const BrandNameH2 = styled.h2`
+  font-size: 2rem;
+  font-weight: bold;
+  color: ${palette.white};
+  text-shadow: 5px 5px 10px ${palette.gold}; //
   @media (max-width: 500px) {
     justify-self: flex-start;
     margin-left: 20px;
@@ -69,19 +64,6 @@ export const MobNavi = styled.nav`
   justify-content: space-between;
   align-items: center;
   display: none;
-  ${(props) => {
-    if (props.backgroundStyle === true) {
-      return `
-		transition: 0.3s ease-in-out;
-		background: ${palette.almostBlackOp03};
-		`;
-    } else {
-      return `
-		transition: 0.3s ease-in-out;
-		background-color: ${palette.almostBlack};
-		`;
-    }
-  }}
   @media (max-width: 500px) {
     display: flex;
     font-size: 18px;

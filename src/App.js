@@ -4,6 +4,7 @@ import React, { Suspense } from "react";
 import Layout from "./components/Layout";
 import Fallback from "./components/Fallback";
 const Home = React.lazy(() => import("./components/Home"));
+const Skills = React.lazy(() => import("./components/Skills"));
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/skills" element={<Skills />} />
         </Route>
       </Routes>
     </Suspense>

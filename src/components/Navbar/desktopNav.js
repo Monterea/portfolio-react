@@ -1,71 +1,48 @@
-import React, { useState } from "react";
 import { FullName } from "../../assets/text/infoText";
-import { Navi, MenuList, MenuItem, MenuLink, BrandName } from "./navbarStyles";
+import {
+  Navi,
+  MenuList,
+  MenuItem,
+  MenuLink,
+  BrandName,
+  BrandNameH2,
+} from "./navbarStyles";
 
 export default function DesktopNav() {
-  const [navbarColor, setNavbarColor] = useState(true);
-  const changeNavbarColor = () => {
-    if (window.scrollY <= 70) {
-      setNavbarColor(true);
-    } else {
-      setNavbarColor(false);
-    }
-  };
-  window.addEventListener("scroll", changeNavbarColor);
-  const handleClick = () => {
-    handleScroll();
-  };
-  const handleScroll = () => {
-    window.scrollTo(0, 0);
-  };
-
   return (
     <>
-      <Navi name="desktop navbar" backgroundStyle={navbarColor}>
+      <Navi name="desktop navbar">
         <div
           name="desktop navbar body"
           style={{
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
-            width: "80%",
-            maxWidth: "1200px",
+            width: "95%",
+            maxWidth: "1700px",
           }}
         >
           <BrandName name="desktop navbar brand">
-            <h1>{FullName}</h1>
+            <BrandNameH2 className="cursive">{FullName}</BrandNameH2>
           </BrandName>
           <MenuList>
             <MenuItem>
-              <MenuLink name="desktop nav home" to="/" onClick={handleClick}>
+              <MenuLink className="bold" name="desktop nav home" to="/">
                 DOMŮ
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink
-                name="desktop nav info"
-                to="/about"
-                onClick={handleClick}
-              >
-                INFO
+              <MenuLink className="bold" name="desktop nav info" to="/skills">
+                O MĚ
               </MenuLink>
             </MenuItem>
             <MenuItem>
               <MenuLink
+                className="bold"
                 name="desktop nav projects"
-                to="/gallery"
-                onClick={handleClick}
+                to="/works"
               >
                 PROJEKTY
-              </MenuLink>
-            </MenuItem>
-            <MenuItem>
-              <MenuLink
-                name="desktop nav contact"
-                to="/contact"
-                onClick={handleClick}
-              >
-                KONTAKT
               </MenuLink>
             </MenuItem>
           </MenuList>

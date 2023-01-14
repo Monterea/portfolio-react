@@ -1,4 +1,5 @@
 import React from "react";
+//import { useState } from "react";
 import {
   City,
   Email,
@@ -16,8 +17,25 @@ import {
   B,
   NewTabLink,
 } from "./footerStyles";
+import GitHub from "../../assets/pictures/techStack/gitHub.svg";
+import LinkedIn from "../../assets/pictures/contact/linkedIn.svg";
+//import myCvPdf from "../../assets/files/Stuchlikova_CV.pdf";
 
 export default function Footer() {
+  // const [cvDownloaded, setCvDownloaded] = useState(false);
+
+  /*  const Button = ({ onClick }) => {
+    return (
+      <motion.button
+        onClick={onClick}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        Click me!
+      </motion.button>
+    );
+  }; */
+  //<Button onClick={() => console.log('Button was clicked!')} />
   return (
     <FooterContainer name="footer container">
       <FooterBody name="footer body">
@@ -35,21 +53,41 @@ export default function Footer() {
           <P name="contact number">{Phone}</P>
         </FooterItem>
         <FooterItem name="footer socials">
-          <H1 name="socials">Socials</H1>
           <NewTabLink
             href="https://github.com/Monterea"
             target="_blank"
             name="github"
           >
-            GitHub
+            <img
+              src={GitHub}
+              alt="Git hub link"
+              name="Git hub link"
+              height="50px"
+            />
           </NewTabLink>
           <NewTabLink
             href="https://linkedin.com/in/michaela-stuchlikova999"
             target="_blank"
             name="linkedin"
           >
-            LinkedIn
+            <img
+              src={LinkedIn}
+              alt="LinkedIn link"
+              name="LinkedIn link"
+              height="50px"
+            />
           </NewTabLink>
+
+          {/*           <CvButton
+            name="download cv button"
+            href={myCvPdf}
+            onClick={() => {
+              setCvDownloaded(true);
+            }}
+            download="Stuchlikova_CV.pdf"
+          >
+            {cvDownloaded ? "CV staženo!" : "Stáhni CV"}
+          </CvButton> */}
         </FooterItem>
       </FooterBody>
     </FooterContainer>

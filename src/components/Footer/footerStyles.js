@@ -8,13 +8,13 @@ export const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: ${palette.almostBlack};
+  background-color: ${palette.darkBlue};
 `;
 export const FooterBody = styled.div`
   display: grid;
   gap: 20px;
-  width: 80%;
-  max-width: 1200px;
+  width: 95%;
+  max-width: 1700px;
   padding: 20px 0;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -43,7 +43,7 @@ export const FooterItem = styled.div`
     grid-area: a;
     @media (max-width: 500px) {
       text-align: center;
-      border-bottom: 1px solid ${palette.whiteFull};
+      border-bottom: 1px solid ${palette.white};
     }
   }
   &:nth-child(2) {
@@ -55,7 +55,12 @@ export const FooterItem = styled.div`
     }
   }
   &:nth-child(3) {
-    text-align: right;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    justify-items: flex-end;
     grid-area: c;
     @media (max-width: 500px) {
       text-align: center;
@@ -64,15 +69,15 @@ export const FooterItem = styled.div`
 `;
 export const H1 = styled.h1`
   color: ${palette.whiteFull};
-  font-size: 15px;
+  font-size: 20px;
 `;
 export const B = styled.b`
   color: ${palette.whiteFull};
-  font-size: 13px;
+  font-size: 16px;
 `;
 export const P = styled.p`
   color: ${palette.whiteFull};
-  font-size: 13px;
+  font-size: 16px;
 `;
 export const NewTabLink = styled.a`
   color: ${palette.whiteFull};

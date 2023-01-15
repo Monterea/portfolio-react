@@ -14,7 +14,8 @@ body {
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/pictures/landingPage/landingPageBackground.jpg");
+  background-image: url("./assets/pictures/landingPage/landingPageBackgroundDark.jpg");
+  min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -29,7 +29,7 @@ export const MenuItem = styled.li`
 export const MenuLink = styled(Link)`
   text-decoration: none;
   color: ${palette.whiteFull};
-  font-size: 18px;
+  font-size: 25px;
   &:hover {
     color: ${palette.gold}; //
   }
@@ -43,7 +43,7 @@ export const BrandName = styled.div`
   }
 `;
 export const BrandNameH2 = styled.h2`
-  font-size: 2rem;
+  font-size: 40px;
   font-weight: bold;
   color: ${palette.white};
   text-shadow: 5px 5px 10px ${palette.gold}; //

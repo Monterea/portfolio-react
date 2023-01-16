@@ -28,12 +28,12 @@ export default function DesktopNav() {
           <MenuList>
             <MenuItem>
               <MenuLink className="bold" name="desktop nav home" to="/">
-                DOMŮ
+                Domů
               </MenuLink>
             </MenuItem>
             <MenuItem>
               <MenuLink className="bold" name="desktop nav info" to="/skills">
-                O MĚ
+                O mě
               </MenuLink>
             </MenuItem>
             <MenuItem>
@@ -42,7 +42,7 @@ export default function DesktopNav() {
                 name="desktop nav projects"
                 to="/works"
               >
-                PROJEKTY
+                Projekty
               </MenuLink>
             </MenuItem>
           </MenuList>

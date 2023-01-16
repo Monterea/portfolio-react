@@ -6,7 +6,7 @@ export const PageContainer = styled.div`
   top: 55px;
   position: relative;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 50px;
   min-height: 100vh;
   display: flex;
@@ -23,19 +23,19 @@ export const PageContainer = styled.div`
   }
 `;
 export const HeaderWhite = styled.div`
-  padding: 35px;
   width: 100%;
+  font-weight: bold;
   justify-self: center;
   text-align: center;
-  padding: 15px;
+  padding-bottom: 10px;
 `;
 export const H2White = styled.h2`
   color: ${palette.white};
-  font-size: 45px;
+  font-size: 65px;
   font-weight: bold;
   text-align: center;
   padding: 3px;
-  padding-bottom: 10px;
+
   text-shadow: 5px 5px 10px #f5a100;
 `;
 export const CaruselsContainer = styled.div`

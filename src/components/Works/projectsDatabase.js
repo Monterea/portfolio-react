@@ -75,7 +75,7 @@ export const ProjectsDatabase = [
     id: 6,
     title: "Countdown days app",
     description: "mobilní aplikace na zjištění pořtu dnů do události",
-    description1: "",
+    description1: "aplikace vytvořená v kurzu",
     description2: "",
     technology: "Xamarine",
     image: CountdownDays,
@@ -100,7 +100,7 @@ export const ProjectsDatabase = [
     title: "Weather app",
     description:
       "mobilní aplikace propojená s webovou aplikací zjišťující aktuální počasí",
-    description1: "",
+    description1: "aplikace vytvořená v kurzu",
     description2: "",
     technology: "Xamarine",
     image: WeatherApp,

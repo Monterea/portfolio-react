@@ -1,12 +1,20 @@
 import styled from "styled-components";
+//import * as pallete from "../../App.mainStyles";
+import landingPageBackgroundDark from "../../assets/pictures/landingPage/landingPageBackgroundDark.jpg";
 
 export const PageContainer = styled.div`
+  top: 55px;
+  position: relative;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #222;
-  position: relative;
-  min-height: 100vh;
-  background-color: #b3e6f4;
+  justify-content: flex-end;
+  width: 100%;
+  background-image: url(${landingPageBackgroundDark});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 `;

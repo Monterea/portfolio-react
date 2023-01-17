@@ -17,7 +17,7 @@ import {
   B,
   NewTabLink,
 } from "./footerStyles";
-import GitHub from "../../assets/pictures/techStack/gitHub.svg";
+import GitHub from "../../assets/pictures/contact/gitHub.svg";
 import LinkedIn from "../../assets/pictures/contact/linkedIn.svg";
 //import myCvPdf from "../../assets/files/Stuchlikova_CV.pdf";
 

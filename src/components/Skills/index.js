@@ -1,11 +1,15 @@
 import React from "react";
 import { PageContainer } from "./skillsStyles";
-import { TechStackComponent } from "./techStackComponent";
+import { HobbiesContainer } from "./hobbiesContainer";
+import { TechnologiesContainer } from "./technologiesContainer";
+import { DescriptionContainer } from "./descriptionContainer";
 
 export default function Skills() {
   return (
     <PageContainer name="skills page">
-      <TechStackComponent />
+      <TechnologiesContainer />
+      <DescriptionContainer />
+      <HobbiesContainer />
     </PageContainer>
   );
 }

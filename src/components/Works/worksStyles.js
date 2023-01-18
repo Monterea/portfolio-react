@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import landingPageBackgroundDark from "../../assets/pictures/landingPage/landingPageBackgroundDark.jpg";
-import * as palette from "../../App.mainStyles";
+import * as pallete from "../../App.mainStyles";
 
 export const PageContainer = styled.div`
   top: 55px;
@@ -30,16 +30,16 @@ export const HeaderWhite = styled.div`
   padding-bottom: 10px;
 `;
 export const H2White = styled.h2`
-  color: ${palette.white};
+  color: ${pallete.white};
   font-size: 65px;
   font-weight: bold;
   text-align: center;
   padding: 3px;
 
-  text-shadow: 5px 5px 10px #f5a100;
+  text-shadow: 5px 5px 10px ${pallete.gold};
 `;
 export const CaruselsContainer = styled.div`
-  color: ${palette.darkBlue};
+  color: ${pallete.darkBlue};
   top: 55px;
   position: relative;
   flex-direction: column;
@@ -50,6 +50,6 @@ export const CaruselsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  background-color: ${palette.lightBlue};
-  //background-color: ${palette.white};
+  background-color: ${pallete.lightBlue};
+  //background-color: ${pallete.white};
 `;

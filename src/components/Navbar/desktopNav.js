@@ -45,6 +45,15 @@ export default function DesktopNav() {
                 Projekty
               </MenuLink>
             </MenuItem>
+            <MenuItem>
+              <MenuLink
+                className="bold"
+                name="desktop nav projects"
+                to="/nested"
+              >
+                NestedList
+              </MenuLink>
+            </MenuItem>
           </MenuList>
         </div>
       </Navi>

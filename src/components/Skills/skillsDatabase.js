@@ -15,7 +15,7 @@ import android from "../../assets/pictures/techStack/android.png";
 import oracle from "../../assets/pictures/techStack/oracle.png";
 import mysql from "../../assets/pictures/techStack/mysql.png";
 import access from "../../assets/pictures/techStack/access.png";
-import junit from "../../assets/pictures/techStack/java.png";
+import junit from "../../assets/pictures/techStack/JUnit.png";
 import selenium from "../../assets/pictures/techStack/Selenium.png";
 import cypress from "../../assets/pictures/techStack/Cypress.png";
 import gimp from "../../assets/pictures/techStack/gimp.png";
@@ -41,7 +41,7 @@ export const SkillsDatabase = [
   },
   {
     id: 2,
-    title: "WWW",
+    title: "Webové aplikace",
     technologies: [
       {
         id: 1,

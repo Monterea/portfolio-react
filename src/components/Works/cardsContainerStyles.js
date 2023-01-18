@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import * as palette from "../../App.mainStyles";
+import * as pallete from "../../App.mainStyles";
 //import landingPageBackgroundDark from "../../assets/pictures/landingPage/landingPageBackgroundDark.jpg";
 /* export const CardsContainer = styled.div`
   width: 100%;
@@ -18,8 +18,8 @@ export const Card = styled.div`
   max-width: 500px;
   width: 400px;
   padding: 10px;
-  border: 3px solid ${palette.darkBlue};
-  background-color: ${palette.white};
+  border: 3px solid ${pallete.darkBlue};
+  background-color: ${pallete.white};
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -40,29 +40,29 @@ export const TypographyHeader = styled.div`
   height: 50px;
   padding-top: 7px;
   justify-content: center;
-  background-color: ${palette.lightBlue};
+  background-color: ${pallete.lightBlue};
 `;
 export const P = styled.p`
   font-size: 16px;
   padding-bottom: 5px;
-  color: ${palette.black};
+  color: ${pallete.black};
 `;
 export const T = styled.p`
   font-size: 18px;
   padding: 5px;
   font-weight: bolder;
-  color: ${palette.black};
-  border-top: 2px solid ${palette.darkBlue};
+  color: ${pallete.black};
+  border-top: 2px solid ${pallete.darkBlue};
 `;
 
 export const CardHeader = styled.h4`
   font-size: 30px;
-  color: ${palette.black};
+  color: ${pallete.black};
 `;
 export const Typography = styled.div`
   width: 100%;
   font-size: 18px;
-  background-color: ${palette.white};
+  background-color: ${pallete.white};
   padding: 10px;
   height: 150px;
   display: flex;
@@ -74,19 +74,19 @@ export const CardActions = styled.div`
   width: 100%;
   border-radius: 10px;
   height: 50px;
-  background-color: ${palette.lightBlue};
+  background-color: ${pallete.lightBlue};
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 `;
 export const Button = styled.a`
-  color: ${palette.black};
+  color: ${pallete.black};
   text-decoration: none;
   font-weight: bold;
   text-align: center;
   padding-top: 4px;
-  background-color: ${palette.gold};
+  background-color: ${pallete.gold};
   width: 130px;
   height: 30px;
   border: 2px solid black;

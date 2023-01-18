@@ -12,12 +12,12 @@ export const PageContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  background-image: url(${landingPageBackgroundDark});
+  background-image: url(${landingPageBackgroundLight});
   background-size: cover;
   //background-repeat: no-repeat;
   background-position: center;
 `;
-export const TechnologiesContainer = styled.div`
+/* export const TechnologiesContainer = styled.div`
   position: relative;
   flex-direction: column;
   display: flex;
@@ -27,40 +27,7 @@ export const TechnologiesContainer = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-`;
-export const TechnologiesBody = styled.div`
-  position: relative;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  /*   background-image: url(${landingPageBackgroundLight});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-`;
-export const TechnologiesUnit = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: center;
-`;
-export const TechUnit = styled.div`
-  width: 105px;
-  height: 105px;
-  background-color: ${pallete.white};
-  border: 3px solid ${pallete.darkBlue};
-  border-radius: 5px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
+`; */
 export const HobbiesContainer = styled.div`
   position: relative;
   flex-direction: column;

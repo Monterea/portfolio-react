@@ -5,13 +5,8 @@ import {
   H2,
   P,
   DescriptionContainer,
-  TechnologiesContainer,
-  TechnologiesBody,
-  TechnologiesUnit,
-  TechUnit,
 } from "./skillsStyles";
-//import { TechnologiesContainer } from "../Skills/technologiesContainer";
-import { SkillsDatabase } from "../Skills/skillsDatabase";
+import { TechnologiesContainer } from "./technologiesContainer";
 //import { HobbiesDescription } from "../../../public/textFiles/hobbiesText.txt";
 
 export default function Skills() {
@@ -19,52 +14,7 @@ export default function Skills() {
   return (
     <>
       <PageContainer name="skills page">
-        <TechnologiesContainer>
-          <H2>Technologie</H2>
-          <TechnologiesBody>
-            {SkillsDatabase.map((item, index) => {
-              return (
-                <TechnologiesUnit key={index}>
-                  <ul
-                    className="bold"
-                    style={{
-                      color: "black",
-                      fontSize: "30px",
-                      fontWeight: "bold",
-                      paddingBottom: "20px",
-                      //         paddingTop: "20px",
-                    }}
-                  >
-                    {item.title}
-                  </ul>
-                  {item.technologies.map((subitem, i) => {
-                    return (
-                      <ul>
-                        <li
-                          style={{
-                            listStyleType: "none",
-                            paddingBottom: "10px",
-                            alignItems: "center",
-                          }}
-                        >
-                          <TechUnit>
-                            <img
-                              name={"project-" + subitem.name + "-image"}
-                              src={subitem.image}
-                              alt={subitem.name}
-                              width="80px"
-                              // max-height="100%"
-                            />
-                          </TechUnit>
-                        </li>
-                      </ul>
-                    );
-                  })}
-                </TechnologiesUnit>
-              );
-            })}
-          </TechnologiesBody>
-        </TechnologiesContainer>
+        <TechnologiesContainer />
         <DescriptionContainer>.....</DescriptionContainer>
         <HobbiesContainer>
           <H2>Koníčky</H2>

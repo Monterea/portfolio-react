@@ -14,7 +14,8 @@ export /* default */ function TechnologiesContainer() {
       className="TechnologiesContainer"
       style={{
         position: "relative",
-        paddingTop: "20px",
+        paddingTop: "50px",
+        paddingBottom: "50px",
         width: "100%",
         backgroundImage:
           "../../assets/pictures/landingPage/landingPageBackgroundLight.jpg",

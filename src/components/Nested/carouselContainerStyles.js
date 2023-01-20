@@ -32,7 +32,7 @@ export const Row = styled.div`
   width: 100%;
   //max-width: 1500px;
 `;
-export const Carusel = styled.div`
+export const Carousel = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -69,21 +69,6 @@ export const Pdelineation = styled.p`
   text-align: left;
   color: ${palette.black};
 `;
-/* export const CarouselBody = styled.div`
-  width: 100%;
-  max-width: 600px;
-  position: relative;
-  display: grid;
-  aspect-ratio: 600/640;
-  background-color: #15104a;
-  padding: 25px;
-  gap: 5px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "foto" "title";
-  grid-area: 'I I',
-            'L R';
-`; */
 export const CarouselBody = styled.div`
   position: relative;
   display: flex;
@@ -138,7 +123,6 @@ export const CarouselButton = styled.button`
   width: 50px;
   aspect-ratio: 1/1;
   background-color: ${palette.almostBlackOp03};
-  background-image: url(${CarouselArrow});
   border-radius: 50%;
   border: none;
   z-index: 5;

@@ -15,18 +15,18 @@ import radix2 from "../../assets/pictures/carousel/Radix2.jpg";
 import radix8 from "../../assets/pictures/carousel/Radix8.jpg";
 import robutek from "../../assets/pictures/carousel/robutek.png";
 import splavmatysek from "../../assets/pictures/carousel/splavMatysek.jpg";
-import vylet from "../../assets/pictures/carousel/vylet.jpg";
-/* import beaKalendar from "../../assets/pictures/carousel";
+/*import vylet from "../../assets/pictures/carousel/vylet.jpg";
+ import beaKalendar from "../../assets/pictures/carousel";
 import beaKalendar from "../../assets/pictures/carousel";
 import beaKalendar from "../../assets/pictures/carousel";
 import beaKalendar from "../../assets/pictures/carousel";
 import beaKalendar from "../../assets/pictures/carousel"; */
 
-export const ProjectsDatabase = [
+export const CarouselsDatabase = [
   {
     id: 1,
     title: "Grafika",
-    description: [
+    descriptions: [
       "Grafická tvorba využívající průhlednosti a&nbsp;vrstev.",
       "Použité programy a nástroje:",
       "GIMP - rastrový grafický editor, který se&nbsp;používá se&nbsp;zejména pro&nbsp;retušování a&nbsp;úpravy obrázků, fotografií, kreslení rukou, převod mezi různými formáty obrázků, tvorbu webové grafiky a&nbsp;specializovanější práce.",
@@ -85,19 +85,43 @@ export const ProjectsDatabase = [
   {
     id: 2,
     title: "Tvorba digitální publikace",
-    description: [
+    descriptions: [
       "Použité programy a nástroje:",
       "Adobe InDesign - nástroj pro návrh a rozvržení stránek pro desktopové a digitální publikování.",
       "GIMP - rastrový grafický editor, který se používá se zejména pro retušování a úpravy obrázků, fotografií, kreslení rukou, převod mezi různými formáty obrázků, tvorbu webové grafiky a specializovanější práce.",
       "Inkscape - nástroj na tvorbu a úpravu vektorové grafiky.",
     ],
-    //   preview: autoskolaSmer,
-    image: [radix1, radix2, radix8, karmickaastrologie],
+    preview: [
+      {
+        id: 1,
+        name: "",
+        addition: "",
+        image: radix1,
+      },
+      {
+        id: 2,
+        name: "",
+        addition: "",
+        image: radix2,
+      },
+      {
+        id: 3,
+        name: "",
+        addition: "",
+        image: radix8,
+      },
+      {
+        id: 4,
+        name: "",
+        addition: "",
+        image: karmickaastrologie,
+      },
+    ],
   },
   {
     id: 3,
     title: "Malby",
-    description: [
+    descriptions: [
       "Ruční velkometrážová malba na vnitřní stěnu místnosti bez použití projektoru pro základní nákres obrazu.",
       "Podklad: stěrková hmota / první vnitřní nátěr",
       "Použité materiály: bílá malířská základní barva a tónovací matné barvy pro vnitřní a vnější použití.",

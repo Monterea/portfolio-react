@@ -19,10 +19,10 @@ export default function Nested() {
         width: "100%",
         color: "black",
         justifyContent: "flex-start",
-        alignItems: "center",
+        alignItems: "flex-start",
         display: "flex",
         flexDirection: "column",
-        //   flexWrap: "wrap",
+        flexWrap: "wrap",
         paddingTop: "50px",
         paddingBottom: "50px",
         backgroundColor: "white",
@@ -33,7 +33,8 @@ export default function Nested() {
         return (
           <Row key={index}>
             {/*  <Carousel />*/}
-            <CarouselComponent />
+            <CarouselComponent carousel={item} />
+
             <Delineation>
               <H3 className="bold">{item.title}</H3>
               {item.descriptions.map((subitem) => {

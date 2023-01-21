@@ -15,23 +15,17 @@ import radix2 from "../../assets/pictures/carousel/Radix2.jpg";
 import radix8 from "../../assets/pictures/carousel/Radix8.jpg";
 import robutek from "../../assets/pictures/carousel/robutek.png";
 import splavmatysek from "../../assets/pictures/carousel/splavMatysek.jpg";
-/*import vylet from "../../assets/pictures/carousel/vylet.jpg";
- import beaKalendar from "../../assets/pictures/carousel";
-import beaKalendar from "../../assets/pictures/carousel";
-import beaKalendar from "../../assets/pictures/carousel";
-import beaKalendar from "../../assets/pictures/carousel";
-import beaKalendar from "../../assets/pictures/carousel"; */
 
 export const CarouselsDatabase = [
   {
     id: 1,
     title: "Grafika",
     descriptions: [
-      "Grafická tvorba využívající průhlednosti a&nbsp;vrstev.",
+      "Grafická tvorba využívající průhlednosti a\u00a0vrstev.",
       "Použité programy a nástroje:",
-      "GIMP - rastrový grafický editor, který se&nbsp;používá se&nbsp;zejména pro&nbsp;retušování a&nbsp;úpravy obrázků, fotografií, kreslení rukou, převod mezi různými formáty obrázků, tvorbu webové grafiky a&nbsp;specializovanější práce.",
-      "Photopea - software na&nbsp;úpravu a&nbsp;zpracování rastrových a&nbsp;vektorových obrázků od&nbsp;českého vývojáře Ivana Kuckira.",
-      "Inkscape - nástroj na&nbsp;tvorbu a&nbsp;úpravu vektorové grafiky.",
+      "GIMP - rastrový grafický editor, který se\u00a0používá se\u00a0zejména pro\u00a0retušování a\u00a0úpravy obrázků, fotografií, kreslení rukou, převod mezi různými formáty obrázků, tvorbu webové grafiky a\u00a0specializovanější práce.",
+      "Photopea - software na\u00a0úpravu a\u00a0zpracování rastrových a\u00a0vektorových obrázků od\u00a0českého vývojáře Ivana Kuckira.",
+      "Inkscape - nástroj na\u00a0tvorbu a\u00a0úpravu vektorové grafiky.",
       "Zoner Callisto - vektorový grafický editor.",
     ],
     preview: [
@@ -51,32 +45,32 @@ export const CarouselsDatabase = [
         image: jirikKalendar,
       },
       {
-        id: 3,
+        id: 4,
         addition: "měsíční kalendář pro vklad vlastní fotografie",
         image: splavmatysek,
       },
       {
-        id: 4,
+        id: 5,
         addition: "vrstva pro tisk na magický hrnek měnící barvu povrchu",
         image: magickyhrnek,
       },
       {
-        id: 5,
+        id: 6,
         addition: "nápaditá magnetka pomocí koláže",
         image: motylci,
       },
       {
-        id: 6,
+        id: 7,
         addition: "pozadí na plochu počítače pomocí koláže",
         image: nato,
       },
       {
-        id: 7,
+        id: 8,
         addition: "nápaditá magnetka pomocí koláže",
         image: dansptaky,
       },
       {
-        id: 8,
+        id: 9,
         addition: "responzivní vektorový obrázek",
         image: robutek,
       },
@@ -87,9 +81,9 @@ export const CarouselsDatabase = [
     title: "Tvorba digitální publikace",
     descriptions: [
       "Použité programy a nástroje:",
-      "Adobe InDesign - nástroj pro návrh a rozvržení stránek pro desktopové a digitální publikování.",
-      "GIMP - rastrový grafický editor, který se používá se zejména pro retušování a úpravy obrázků, fotografií, kreslení rukou, převod mezi různými formáty obrázků, tvorbu webové grafiky a specializovanější práce.",
-      "Inkscape - nástroj na tvorbu a úpravu vektorové grafiky.",
+      "Adobe InDesign - nástroj pro návrh a\u00a0rozvržení stránek pro\u00a0desktopové a\u00a0digitální publikování.",
+      "GIMP - rastrový grafický editor, který se\u00a0používá se\u00a0zejména pro retušování a\u00a0úpravy obrázků, fotografií, kreslení rukou, převod mezi různými formáty obrázků, tvorbu webové grafiky a\u00a0specializovanější práce.",
+      "Inkscape - nástroj na\u00a0tvorbu a\u00a0úpravu vektorové grafiky.",
     ],
     preview: [
       {
@@ -100,8 +94,8 @@ export const CarouselsDatabase = [
       },
       {
         id: 2,
-        name: "",
-        addition: "",
+        name: "xxx",
+        addition: "xxx",
         image: radix2,
       },
       {
@@ -122,9 +116,9 @@ export const CarouselsDatabase = [
     id: 3,
     title: "Malby",
     descriptions: [
-      "Ruční velkometrážová malba na vnitřní stěnu místnosti bez použití projektoru pro základní nákres obrazu.",
+      "Ruční velkometrážová malba na\u00a0vnitřní stěnu místnosti bez použití projektoru pro základní nákres obrazu.",
       "Podklad: stěrková hmota / první vnitřní nátěr",
-      "Použité materiály: bílá malířská základní barva a tónovací matné barvy pro vnitřní a vnější použití.",
+      "Použité materiály: bílá malířská základní barva a\u00a0tónovací matné barvy pro\u00a0vnitřní a\u00a0vnější použití.",
     ],
     preview: [
       {
@@ -146,7 +140,7 @@ export const CarouselsDatabase = [
         image: bakugan,
       },
       {
-        id: 3,
+        id: 4,
         name: "Garfield a Rákosníček",
         addition: [
           "Garfield - velikost obrazu: výška 145cm a šířka 86cm.",
@@ -155,7 +149,7 @@ export const CarouselsDatabase = [
         image: garfieldarakosnicek,
       },
       {
-        id: 4,
+        id: 5,
         name: "Loď - mozaika",
         addition: "velikost obrazu: výška 242cm a šířka 234cm.",
         image: lodka,

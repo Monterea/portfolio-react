@@ -33,7 +33,7 @@ export default function DesktopNav() {
             </MenuItem>
             <MenuItem>
               <MenuLink className="bold" name="desktop nav info" to="/skills">
-                O mě
+                O&nbsp;mě
               </MenuLink>
             </MenuItem>
             <MenuItem>

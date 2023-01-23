@@ -1,4 +1,6 @@
 import React from "react";
+//import { useParams } from "react-router-dom";
+//import { useState } from "react";
 import { CarouselsDatabase } from "./carouselsDatabase";
 import { CarouselComponent } from "./carouselComponent";
 import {
@@ -7,7 +9,6 @@ import {
   Pdelineation,
   Row,
   Delineation,
-  //  Carousel,
 } from "./carouselsContainerStyles";
 
 export default function Nested() {
@@ -29,14 +30,13 @@ export default function Nested() {
       }}
     >
       <H2 className="bold">Grafika</H2>
-      {CarouselsDatabase.map((item, index) => {
+      {CarouselsDatabase.map((carousel, index) => {
         return (
           <Row key={index}>
-            {/*  <Carousel />*/}
-            <CarouselComponent />
+            <CarouselComponent carousel={carousel.pictures} />
             <Delineation>
-              <H3 className="bold">{item.title}</H3>
-              {item.descriptions.map((subitem) => {
+              <H3 className="bold">{carousel.title}</H3>
+              {carousel.descriptions.map((subitem) => {
                 return <Pdelineation>{subitem}</Pdelineation>;
               })}
             </Delineation>

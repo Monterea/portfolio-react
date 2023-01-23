@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  PageContainer,
-  HeaderWhite,
-  H2White,
-  CaruselsContainer,
-} from "./worksStyles";
+import { CarouselsContainer } from "./carouselsContainer";
+import { PageContainer, HeaderWhite, H2White } from "./worksStyles";
 import CardsContainer from "./cardsContainer";
 
 export default function Works() {
@@ -15,7 +11,7 @@ export default function Works() {
           <H2White>Projekty</H2White>
         </HeaderWhite>
         <CardsContainer />
-        <CaruselsContainer>vvvvvv</CaruselsContainer>
+        <CarouselsContainer />
       </PageContainer>
     </>
   );

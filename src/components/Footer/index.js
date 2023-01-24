@@ -1,5 +1,10 @@
 import React from "react";
-//import { useState } from "react";
+import { useState } from "react";
+import { Popup } from "./popup";
+import GitHub from "../../assets/pictures/contact/gitHub.svg";
+import LinkedIn from "../../assets/pictures/contact/linkedIn.svg";
+import CV from "../../assets/pictures/contact/cv.svg";
+//import myCvPdf from "../../assets/files/Stuchlikova_CV.pdf";
 import {
   City,
   Email,
@@ -16,12 +21,19 @@ import {
   P,
   B,
   NewTabLink,
+  PopupButton,
+  Button,
+  ButtonsContainer,
+  H4,
 } from "./footerStyles";
-import GitHub from "../../assets/pictures/contact/gitHub.svg";
-import LinkedIn from "../../assets/pictures/contact/linkedIn.svg";
-//import myCvPdf from "../../assets/files/Stuchlikova_CV.pdf";
 
 export default function Footer() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
+
   // const [cvDownloaded, setCvDownloaded] = useState(false);
 
   /*  const Button = ({ onClick }) => {
@@ -77,7 +89,14 @@ export default function Footer() {
               height="50px"
             />
           </NewTabLink>
-
+          <PopupButton type="button" onClick={togglePopup}>
+            <img
+              src={CV}
+              alt="Portfolio button"
+              name="Portfolio button"
+              height="50px"
+            />
+          </PopupButton>
           {/*           <CvButton
             name="download cv button"
             href={myCvPdf}
@@ -90,6 +109,20 @@ export default function Footer() {
           </CvButton> */}
         </FooterItem>
       </FooterBody>
+      {isOpen && (
+        <Popup
+          content={
+            <>
+              <H4>Stáhnout portfólio:</H4>
+              <ButtonsContainer>
+                <Button>České</Button>
+                <Button>English</Button>
+              </ButtonsContainer>
+            </>
+          }
+          handleClose={togglePopup}
+        />
+      )}
     </FooterContainer>
   );
 }

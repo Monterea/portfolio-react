@@ -84,3 +84,37 @@ export const NewTabLink = styled.a`
   font-size: 13px;
   text-decoration: underline;
 `;
+export const H4 = styled.h4`
+  color: ${palette.darkBlue};
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+`;
+
+export const ButtonsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`;
+export const PopupButton = styled.button`
+  background-color: ${palette.darkBlue};
+  border: none;
+  color: ${palette.whiteFull};
+`;
+
+export const Button = styled.button`
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  width: 100px;
+  border: 2px ${palette.darkBlue} solid;
+  border-radius: 10px;
+  background-color: ${palette.gold};
+  padding: 10px;
+  text-align: center;
+  color: ${palette.black};
+`;

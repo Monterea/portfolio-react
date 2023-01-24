@@ -9,18 +9,29 @@ export const H2 = styled.h2`
   text-align: center;
   padding: 3px;
   padding-top: 50px;
+  padding-bottom: 20px;
   text-shadow: 5px 5px 10px ${palette.gold};
 `;
 export const Row = styled.div`
   position: relative;
-  flex-direction: row;
   padding: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
   display: flex;
   justify-content: center;
   align-self: center;
   width: 100%;
   max-width: 1600px;
   height: auto;
+  &:nth-child(2) {
+    flex-direction: row;
+  }
+  &:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+  &:nth-child(4) {
+    flex-direction: row;
+  }
 `;
 
 export const Delineation = styled.div`

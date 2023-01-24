@@ -1,6 +1,4 @@
 import React from "react";
-//import { useParams } from "react-router-dom";
-//import { useState } from "react";
 import { CarouselsDatabase } from "./carouselsDatabase";
 import { CarouselComponent } from "./carouselComponent";
 import {
@@ -14,8 +12,8 @@ import {
 export function CarouselsContainer() {
   return (
     <div
-      name={"nested list"}
-      className="NestedList"
+      name={"carousels list"}
+      className="CarouselsList"
       style={{
         width: "100%",
         color: "black",
@@ -33,7 +31,25 @@ export function CarouselsContainer() {
       {CarouselsDatabase.map((carousel, index) => {
         return (
           <Row key={index}>
-            <CarouselComponent carousel={carousel.pictures} />
+            <CarouselComponent
+              carousel={carousel.pictures}
+              name={"carousels list"}
+              className="CarouselsList"
+              style={{
+                position: "relative",
+                width: "50%",
+                maxWidth: "800px",
+                height: "auto",
+                maxHeight: "800px",
+                display: "flex",
+                flexDirection: "column",
+                padding: "20px",
+                justifyContent: "center",
+                alignItems: "center",
+                backgroundColor: "#15104a",
+                color: "white",
+              }}
+            />
             <Delineation>
               <H3 className="bold">{carousel.title}</H3>
               {carousel.descriptions.map((subitem) => {

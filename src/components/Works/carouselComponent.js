@@ -52,7 +52,7 @@ export function CarouselComponent({ carousel }) {
   return (
     <div
       name={"Carousels list body"}
-      className="CarouselsContainer"
+      className="CarouselsComponent"
       style={{
         position: "relative",
         width: "50%",

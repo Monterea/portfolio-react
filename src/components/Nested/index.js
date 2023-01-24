@@ -1,15 +1,12 @@
 import React from "react";
-//import { useParams } from "react-router-dom";
-//import { useState } from "react";
-import { CarouselsDatabase } from "./carouselsDatabase";
-import { CarouselComponent } from "./carouselComponent";
-import {
+/* import {
   H2,
   H3,
   Pdelineation,
   Row,
   Delineation,
-} from "./carouselsContainerStyles";
+  CarouselComponent,
+} from "./carouselsContainerStyles"; */
 
 export default function Nested() {
   return (
@@ -28,21 +25,6 @@ export default function Nested() {
         paddingBottom: "50px",
         backgroundColor: "white",
       }}
-    >
-      <H2 className="bold">Grafika</H2>
-      {CarouselsDatabase.map((carousel, index) => {
-        return (
-          <Row key={index}>
-            <CarouselComponent carousel={carousel.pictures} />
-            <Delineation>
-              <H3 className="bold">{carousel.title}</H3>
-              {carousel.descriptions.map((subitem) => {
-                return <Pdelineation>{subitem}</Pdelineation>;
-              })}
-            </Delineation>
-          </Row>
-        );
-      })}
-    </div>
+    ></div>
   );
 }

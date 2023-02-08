@@ -30,8 +30,16 @@ export const MenuLink = styled(Link)`
   text-decoration: none;
   color: ${palette.whiteFull};
   font-size: 25px;
+  cursor: pointer;
+  @media (max-width: 1240px) {
+    font-size: 20px;
+  }
   &:hover {
-    color: ${palette.gold}; //
+    font-size: 35px;
+    color: ${palette.gold};
+    @media (max-width: 1240px) {
+      font-size: 30px;
+    }
   }
 `;
 export const BrandName = styled.div`
@@ -47,6 +55,9 @@ export const BrandNameH2 = styled.h2`
   font-weight: bold;
   color: ${palette.white};
   text-shadow: 5px 5px 10px ${palette.gold}; //
+  @media (max-width: 1240px) {
+    font-size: 35px;
+  }
   @media (max-width: 500px) {
     justify-self: flex-start;
     margin-left: 20px;

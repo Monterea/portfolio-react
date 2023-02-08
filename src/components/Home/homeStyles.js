@@ -33,6 +33,22 @@ export const Introduction = styled.div`
   //text-shadow: 2px 2px 10px ${palette.white}, 0 0 10px ${palette.white},  0 0 5px ${palette.white};
   padding-bottom: 100px;
   padding-left: 100px;
+  @media (max-width: 1240px) {
+    font-size: 25px;
+    max-width: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+  @media (max-width: 976px) {
+    position: fixed;
+    top: 300px;
+    font-size: 25px;
+    max-width: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
 `;
 export const H1home = styled.h1`
   display: flex;
@@ -40,7 +56,11 @@ export const H1home = styled.h1`
   justify-content: center;
   z-index: 4;
   //  font-family: Libre Baskerville;
-  padding-bottom: 110px;
+  padding-bottom: 80px;
+  @media (max-width: 976px) {
+    position: fixed;
+    bottom: 20px;
+  }
 `;
 export const H1 = styled.h1`
   z-index: 4;
@@ -50,9 +70,13 @@ export const H1 = styled.h1`
   font-size: 6rem;
   text-shadow: 5px 5px 10px #f5a100;
   padding-bottom: 80px;
-  @media (max-width: 768px) {
-    font-size: 3em;
+  @media (max-width: 1240px) {
+    padding-bottom: 50px;
+    font-size: 5rem;
   }
+  /*   @media (max-width: 768px) {
+    font-size: 3em;
+  } */
 `;
 export const H2home = styled(H1home)`
   font-size: 25px;
@@ -106,4 +130,7 @@ export const LightsBorderHero = styled.div`
   position: absolute;
   top: 90px;
   right: 100px;
+  @media (max-width: 1240px) {
+    right: 50px;
+  }
 `;

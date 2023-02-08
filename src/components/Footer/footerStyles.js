@@ -80,9 +80,14 @@ export const P = styled.p`
   font-size: 16px;
 `;
 export const NewTabLink = styled.a`
-  color: ${palette.whiteFull};
   font-size: 13px;
   text-decoration: underline;
+  cursor: pointer;
+  height: 50px;
+  &:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(2);
+  }
 `;
 export const H4 = styled.h4`
   color: ${palette.darkBlue};
@@ -104,17 +109,26 @@ export const PopupButton = styled.button`
   background-color: ${palette.darkBlue};
   border: none;
   color: ${palette.whiteFull};
+  cursor: pointer;
+  height: 50px;
+  &:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(2);
+  }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   font-size: 16px;
   font-weight: bold;
+  text-decoration: none;
   height: 50px;
-  width: 100px;
+  width: 150px;
   border: 2px ${palette.darkBlue} solid;
   border-radius: 10px;
   background-color: ${palette.gold};
-  padding: 10px;
+  padding: 15px;
+  justify-items: center;
   text-align: center;
+  cursor: pointer;
   color: ${palette.black};
 `;

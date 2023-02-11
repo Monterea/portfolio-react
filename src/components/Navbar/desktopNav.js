@@ -28,6 +28,8 @@ export default function DesktopNav() {
           <MenuList>
             <MenuItem>
               <MenuLink className="bold" name="desktop nav home" to="/">
+                {/*               chci aby se mi podbarvila strana na které aktuálně jsem
+              chci aby se mi při velikosti stránky 640px už nezobrazoval odkaz na stránku ve které nyní jsem */}
                 Domů
               </MenuLink>
             </MenuItem>
@@ -43,15 +45,6 @@ export default function DesktopNav() {
                 to="/works"
               >
                 Projekty
-              </MenuLink>
-            </MenuItem>
-            <MenuItem>
-              <MenuLink
-                className="bold"
-                name="desktop nav projects"
-                to="/nested"
-              >
-                NestedList
               </MenuLink>
             </MenuItem>
           </MenuList>

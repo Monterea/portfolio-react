@@ -6,77 +6,51 @@ export const PageContainer = styled.div`
   top: 55px;
   position: relative;
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  min-height: 100vh;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  min-height: 800px;
   width: 100%;
   background-image: url(${landingPageBackground});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   @media (max-width: 768px) {
-    min-height: 80vh;
-    padding-top: 80px;
+    min-height: 90vh;
+    padding-top: 20px;
   }
 `;
-export const Introduction = styled.div`
-  color: ${palette.gold};
-  // color: ${palette.darkBlue};
-  font-size: 30px;
-  max-width: 800px;
-  text-align: center;
-  text-shadow: 2px 2px 10px #15104a, 0 0 10px #15104a, 0 0 5px #15104a;
-  //text-shadow: 2px 2px 10px ${palette.white}, 0 0 10px ${palette.white},  0 0 5px ${palette.white};
-  padding-bottom: 100px;
-  padding-left: 100px;
-  @media (max-width: 1240px) {
-    font-size: 25px;
-    max-width: 600px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-  }
-  @media (max-width: 976px) {
-    position: fixed;
-    top: 300px;
-    font-size: 25px;
-    max-width: 500px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-  }
-`;
+
 export const H1home = styled.h1`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: absolute;
+  top: 510px;
+  width: 100%;
   z-index: 4;
-  //  font-family: Libre Baskerville;
-  padding-bottom: 80px;
-  @media (max-width: 976px) {
-    position: fixed;
-    bottom: 20px;
+  @media (max-width: 768px) {
+    top: 450px;
+  }
+  @media (max-width: 520px) {
+    top: 410px;
   }
 `;
 export const H1 = styled.h1`
   z-index: 4;
   //  font-family: "Alfa Slab One", cursive;
   color: white;
+
   text-align: center;
   font-size: 6rem;
   text-shadow: 5px 5px 10px #f5a100;
-  padding-bottom: 80px;
   @media (max-width: 1240px) {
-    padding-bottom: 50px;
     font-size: 5rem;
   }
-  /*   @media (max-width: 768px) {
-    font-size: 3em;
-  } */
+  @media (max-width: 914px) {
+    font-size: 2, 5em;
+  }
+  @media (max-width: 768px) {
+    font-size: 2em;
+    padding: 20px;
+  }
+  @media (max-width: 520px) {
+    font-size: 40px;
+  }
 `;
 export const H2home = styled(H1home)`
   font-size: 25px;
@@ -88,16 +62,30 @@ export const Bubble = styled.div`
   z-index: 4;
   width: 300px;
   position: absolute;
-  top: 60px;
-  right: 350px;
+  top: 40px;
+  right: 330px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media (max-width: 914px) {
+    width: 250px;
+    top: 20px;
+    right: 300px;
+  }
+  @media (max-width: 768px) {
+    width: 200px;
+    top: 20px;
+    right: 280px;
+  }
+  @media (max-width: 520px) {
+    display: none;
+  }
 `;
 
 export const Hero = styled.div`
   height: 560px;
   width: 287px;
+  // height:100%
   padding: 0px;
   z-index: 3;
 `;
@@ -127,10 +115,52 @@ export const HeroBorder = styled.div`
 export const LightsBorderHero = styled.div`
   height: 580px;
   width: 330px;
-  position: absolute;
-  top: 90px;
-  right: 100px;
-  @media (max-width: 1240px) {
-    right: 50px;
+`;
+export const RelativeContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  height: 700px;
+  @media (max-width: 768px) {
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 600px;
+  }
+  @media (max-width: 520px) {
+    justify-content: center;
+    align-items: center;
+  }
+`;
+export const Introduction = styled.div`
+  color: ${palette.gold};
+  // color: ${palette.darkBlue};
+  font-size: 30px;
+  width: auto;
+  height: 100%;
+  max-width: 800px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 10px #15104a, 0 0 10px #15104a, 0 0 5px #15104a;
+  //text-shadow: 2px 2px 10px ${palette.white}, 0 0 10px ${palette.white},  0 0 5px ${palette.white};
+
+  @media (max-width: 1000px) {
+    font-size: 25px;
+  }
+  @media (max-width: 768px) {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  @media (max-width: 520px) {
+    display: none;
   }
 `;

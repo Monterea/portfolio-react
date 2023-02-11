@@ -47,7 +47,6 @@ export const BrandName = styled.div`
   margin-left: 50px;
   @media (max-width: 500px) {
     justify-self: flex-start;
-    margin-left: 20px;
   }
 `;
 export const BrandNameH2 = styled.h2`
@@ -57,6 +56,9 @@ export const BrandNameH2 = styled.h2`
   text-shadow: 5px 5px 10px ${palette.gold}; //
   @media (max-width: 1240px) {
     font-size: 35px;
+  }
+  @media (max-width: 850px) {
+    font-size: 28px;
   }
   @media (max-width: 500px) {
     justify-self: flex-start;

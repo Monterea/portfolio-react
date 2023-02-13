@@ -21,15 +21,21 @@ export const MenuList = styled.ul`
   width: 40%;
   justify-content: flex-end;
   align-items: center;
+  @media (max-width: 500px) {
+    width: 30%;
+  }
 `;
+
 export const MenuItem = styled.li`
   display: inline-block;
   margin-left: 20px;
+  cursor: pointer;
 `;
 export const MenuLink = styled(Link)`
   text-decoration: none;
   color: ${palette.whiteFull};
   font-size: 25px;
+  font-weight: bold;
   cursor: pointer;
   @media (max-width: 1240px) {
     font-size: 20px;
@@ -45,13 +51,19 @@ export const MenuLink = styled(Link)`
 export const BrandName = styled.div`
   width: 60%;
   margin-left: 50px;
+  @media screen and (max-width: 645px) {
+    margin-left: 10px;
+  }
   @media (max-width: 500px) {
     justify-self: flex-start;
+    margin-left: 20px;
+    width: 70%;
   }
 `;
 export const BrandNameH2 = styled.h2`
   font-size: 40px;
   font-weight: bold;
+  flex-wrap: nowrap;
   color: ${palette.white};
   text-shadow: 5px 5px 10px ${palette.gold}; //
   @media (max-width: 1240px) {
@@ -59,10 +71,6 @@ export const BrandNameH2 = styled.h2`
   }
   @media (max-width: 850px) {
     font-size: 28px;
-  }
-  @media (max-width: 500px) {
-    justify-self: flex-start;
-    margin-left: 20px;
   }
 `;
 //END OF DESKTOP VERSION

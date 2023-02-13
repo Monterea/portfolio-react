@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { FullName } from "../../assets/text/infoText";
+//import { NavLink } from "react-router-dom";
 import {
   Navi,
   MenuList,
@@ -9,6 +11,27 @@ import {
 } from "./navbarStyles";
 
 export default function DesktopNav() {
+  const links = [
+    {
+      id: 1,
+      path: "/",
+      text: "Domů",
+      name: "desktop nav home",
+    },
+    {
+      id: 2,
+      path: "/skills",
+      text: "O\u00a0mě",
+      name: "desktop nav info",
+    },
+    {
+      id: 3,
+      path: "/works",
+      text: "Projekty",
+      name: "desktop nav projects",
+    },
+  ];
+  const [activePage, setActivePage] = useState(null);
   return (
     <>
       <Navi name="desktop navbar">
@@ -26,27 +49,22 @@ export default function DesktopNav() {
             <BrandNameH2 className="cursive">{FullName}</BrandNameH2>
           </BrandName>
           <MenuList>
-            <MenuItem>
-              <MenuLink className="bold" name="desktop nav home" to="/">
-                {/*               chci aby se mi podbarvila strana na které aktuálně jsem
-              chci aby se mi při velikosti stránky 640px už nezobrazoval odkaz na stránku ve které nyní jsem */}
-                Domů
-              </MenuLink>
-            </MenuItem>
-            <MenuItem>
-              <MenuLink className="bold" name="desktop nav info" to="/skills">
-                O&nbsp;mě
-              </MenuLink>
-            </MenuItem>
-            <MenuItem>
-              <MenuLink
-                className="bold"
-                name="desktop nav projects"
-                to="/works"
-              >
-                Projekty
-              </MenuLink>
-            </MenuItem>
+            {links.map((link) => {
+              return (
+                <MenuItem key={link.id}>
+                  <MenuLink
+                    to={link.path}
+                    name={link.name}
+                    className={
+                      activePage === link.id ? "selected-page" : link.id
+                    }
+                    onClick={() => setActivePage(link.id)}
+                  >
+                    {link.text}
+                  </MenuLink>
+                </MenuItem>
+              );
+            })}
           </MenuList>
         </div>
       </Navi>

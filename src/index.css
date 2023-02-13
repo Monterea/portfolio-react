@@ -104,3 +104,23 @@ svg:hover {
   transition: 0.5s ease-in-out;
   transform: scale(2);
 }
+
+.active-link {
+  color: yellow;
+  text-decoration: underline;
+}
+.selected-page {
+  color: #15104a;
+  background-color: #f5a100;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: #f5a100 2px solid;
+  border-radius: 10px;
+}
+@media screen and (max-width: 645px) {
+  .selected-page {
+    display: none;
+    display: hidden;
+  }
+}

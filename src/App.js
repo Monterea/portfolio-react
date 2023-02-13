@@ -6,6 +6,7 @@ import Fallback from "./components/Fallback";
 const Home = React.lazy(() => import("./components/Home"));
 const Skills = React.lazy(() => import("./components/Skills"));
 const Works = React.lazy(() => import("./components/Works"));
+
 function App() {
   return (
     <Suspense fallback={<Fallback />}>

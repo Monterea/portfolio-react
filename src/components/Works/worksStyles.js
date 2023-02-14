@@ -29,15 +29,6 @@ export const HeaderWhite = styled.div`
   text-align: center;
   padding-bottom: 10px;
 `;
-export const H2White = styled.h2`
-  color: ${pallete.white};
-  font-size: 65px;
-  font-weight: bold;
-  text-align: center;
-  padding: 3px;
-
-  text-shadow: 5px 5px 10px ${pallete.gold};
-`;
 export const CaruselsContainer = styled.div`
   color: ${pallete.darkBlue};
   top: 55px;

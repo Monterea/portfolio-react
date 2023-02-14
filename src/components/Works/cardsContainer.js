@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { ProjectsDatabase } from "./projectsDatabase";
+import { P, H5, H4 } from "../../App.mainStyles";
 import {
   Card,
   CardMedia,
@@ -9,9 +10,6 @@ import {
   Typography,
   CardActions,
   Button,
-  CardHeader,
-  P,
-  T,
 } from "./cardsContainerStyles";
 export default function CardsContainer() {
   const [projects, setProjects] = useState(ProjectsDatabase);
@@ -44,14 +42,14 @@ export default function CardsContainer() {
             />
           </CardMedia>
           <CardContent name={"project-" + project.id + "descriptions"}>
-            <TypographyHeader className="bold">
-              <CardHeader className="bold">{project.title}</CardHeader>
+            <TypographyHeader>
+              <H4 className="bold">{project.title}</H4>
             </TypographyHeader>
             <Typography>
               <P>{project.description}</P>
               <P>{project.description1}</P>
               <P>{project.description2}</P>
-              <T>{project.technology}</T>
+              <H5>{project.technology}</H5>
             </Typography>
           </CardContent>
           <CardActions name={"project-" + project.id + "links"}>

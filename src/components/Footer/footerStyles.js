@@ -15,10 +15,19 @@ export const FooterBody = styled.div`
   gap: 20px;
   width: 95%;
   max-width: 1700px;
-  padding: 20px 0;
+  padding: 0 20px;
+  padding-top: 20px;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "a b c";
+  @media (max-width: 650px) {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "a b"
+      "c c";
+  }
   @media (max-width: 500px) {
     width: 100%;
     grid-template-columns: 1fr;
@@ -49,6 +58,9 @@ export const FooterItem = styled.div`
   &:nth-child(2) {
     text-align: center;
     grid-area: b;
+    @media (max-width: 650px) {
+      text-align: right;
+    }
     @media (max-width: 500px) {
       text-align: center;
       border-bottom: 1px solid ${palette.whiteFull};
@@ -62,6 +74,10 @@ export const FooterItem = styled.div`
     justify-content: flex-end;
     justify-items: flex-end;
     grid-area: c;
+    @media (max-width: 650px) {
+      justify-content: center;
+      justify-items: center;
+    }
     @media (max-width: 500px) {
       text-align: center;
     }

@@ -1,13 +1,11 @@
 import React from "react";
 import { useState, useRef, useEffect } from "react";
-
+import { H3, P } from "../../App.mainStyles";
 import {
   CarouselBody,
   ImageContainer,
   CarouselButton,
   CarouselTexts,
-  CarouselTitle,
-  CarouselAddition,
   Image,
   OthersContainer,
 } from "./carouselComponentStyles";
@@ -85,9 +83,9 @@ export function CarouselComponent({ carousel }) {
             }}
           />
           <CarouselTexts>
-            <CarouselTitle className="bold">{carouselName}</CarouselTitle>
-            <CarouselAddition>{carouselAddition}</CarouselAddition>
-            <CarouselAddition>{carouselAddition1}</CarouselAddition>
+            <H3 className="bold">{carouselName}</H3>
+            <P>{carouselAddition}</P>
+            <P>{carouselAddition1}</P>
           </CarouselTexts>
           <CarouselButton
             name="next image"

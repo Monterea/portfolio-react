@@ -8,17 +8,14 @@ import {
   Addendum,
   TitleDescription,
 } from "../../assets/text/skillsDescription.js";
+import { H2, H2white, P, Pwhite, H4white } from "../../App.mainStyles";
 import {
   PageContainer,
   DescriptionContainer,
   HobbiesContainer,
-  H2,
-  P,
-  Pwhite,
-  H2white,
   Body,
   BodyLi,
-  Li,
+  LiJob,
   Ul,
 } from "./skillsStyles";
 
@@ -36,10 +33,12 @@ export default function Skills() {
             ))}
           </Body>
           <Body>
-            <Ul>{TitleJobs}</Ul>
+            <Ul>
+              <H4white>{TitleJobs}</H4white>
+            </Ul>
             <BodyLi>
               {Jobs.map((job) => (
-                <Li>{job}</Li>
+                <LiJob>{job}</LiJob>
               ))}
             </BodyLi>
             {Addendum.map((paragraph) => (

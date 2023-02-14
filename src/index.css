@@ -105,10 +105,6 @@ svg:hover {
   transform: scale(2);
 }
 
-.active-link {
-  color: yellow;
-  text-decoration: underline;
-}
 .selected-page {
   color: #15104a;
   background-color: #f5a100;
@@ -122,5 +118,6 @@ svg:hover {
   .selected-page {
     display: none;
     display: hidden;
+    width: 0px;
   }
 }

@@ -1,13 +1,8 @@
 import React from "react";
 import { CarouselsDatabase } from "./carouselsDatabase";
 import { CarouselComponent } from "./carouselComponent";
-import {
-  H2,
-  H3,
-  Pdelineation,
-  Row,
-  Delineation,
-} from "./carouselsContainerStyles";
+import { H2, H3 } from "../../App.mainStyles";
+import { Pdelineation, Row, Delineation } from "./carouselsContainerStyles";
 
 export function CarouselsContainer() {
   return (

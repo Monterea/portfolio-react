@@ -60,3 +60,101 @@ export const H1 = styled.h1`
     font-size: 30px;
   }
 `;
+export const H2 = styled.h2`
+  color: ${black};
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-shadow: 5px 5px 10px ${gold};
+  @media (max-width: 1400px) {
+    font-size: 4em;
+  }
+  @media (max-width: 1000px) {
+    font-size: 4em;
+  }
+  @media (max-width: 700px) {
+    font-size: 3em;
+  }
+`;
+export const H2white = styled(H2)`
+  color: ${white};
+`;
+export const H3 = styled.h3`
+  color: ${black};
+  font-size: 35px;
+  font-weight: bolder;
+  padding-bottom: 20px;
+  text-shadow: 5px 5px 10px ${white};
+  @media (max-width: 1400px) {
+    font-size: 33px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 30px;
+  }
+  @media (max-width: 700px) {
+    font-size: 28px;
+  }
+`;
+export const H4 = styled.h4`
+  font-size: 28px;
+  color: ${black};
+  font-weight: bolder;
+  padding-bottom: 10px;
+  @media (max-width: 1400px) {
+    font-size: 26px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 24px;
+  }
+  @media (max-width: 700px) {
+    font-size: 22px;
+  }
+`;
+export const H4white = styled(H4)`
+  color: ${white};
+`;
+export const P = styled.p`
+  font-size: 22px;
+  padding-bottom: 6px;
+  text-align: center;
+  color: ${black};
+  @media (max-width: 1400px) {
+    font-size: 20px;
+  }
+  @media (max-width: 1218px) {
+    font-size: 18px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 16px;
+  }
+  @media (max-width: 880px) {
+    font-size: 14px;
+  }
+`;
+
+export const Pwhite = styled(P)`
+  color: ${white};
+`;
+
+export const H5 = styled.h5`
+  font-size: 23px;
+  padding: 5px;
+  font-weight: bolder;
+  color: ${black};
+  border-top: 2px solid ${darkBlue};
+  @media (max-width: 1400px) {
+    font-size: 21px;
+  }
+  @media (max-width: 1218px) {
+    font-size: 19px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 17px;
+  }
+  @media (max-width: 880px) {
+    font-size: 15px;
+  }
+`;

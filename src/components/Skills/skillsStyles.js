@@ -48,35 +48,19 @@ export const BodyLi = styled.div`
   width: 100%;
   column-count: 3;
   column-width: auto;
+  @media (max-width: 1100px) {
+    column-count: 2;
+  }
+  @media (max-width: 600px) {
+    column-count: 1;
+  }
 `;
-export const Li = styled.li`
-  font-size: 20px;
-  padding-bottom: 10px;
-  color: ${palette.white};
-`;
+
 export const Ul = styled.ul`
-  font-size: 25px;
   padding-bottom: 15px;
-  font-weight: bolder;
   color: ${palette.white};
 `;
-export const H2 = styled.h2`
-  color: ${palette.black};
-  font-size: 65px;
-  font-weight: bold;
-  text-align: center;
-  padding: 3px;
-  text-shadow: 5px 5px 10px ${palette.gold};
-`;
-export const H2white = styled(H2)`
-  color: ${palette.white};
-`;
-export const P = styled.p`
-  font-size: 20px;
-  padding-bottom: 10px;
-  text-align: center;
-  color: ${palette.black};
-`;
-export const Pwhite = styled(P)`
+export const LiJob = styled.li`
+  padding-bottom: 15px;
   color: ${palette.white};
 `;

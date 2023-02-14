@@ -2,16 +2,7 @@ import styled from "styled-components";
 import * as palette from "../../App.mainStyles";
 import wall from "../../assets/pictures/landingPage/wall.jpg";
 
-export const H2 = styled.h2`
-  color: ${palette.black};
-  font-size: 65px;
-  font-weight: bold;
-  text-align: center;
-  padding: 3px;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  text-shadow: 5px 5px 10px ${palette.gold};
-`;
+export const H2Carousels = styled(palette.H2)``;
 export const Row = styled.div`
   position: relative;
   padding: 20px;
@@ -47,14 +38,6 @@ export const Delineation = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-`;
-export const H3 = styled.h3`
-  color: ${palette.black};
-  font-size: 30px;
-  font-weight: bolder;
-  font-style: inherit;
-  padding-bottom: 20px;
-  text-shadow: 5px 5px 10px ${palette.white};
 `;
 export const Pdelineation = styled.p`
   font-size: 20px;

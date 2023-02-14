@@ -1,10 +1,13 @@
 import React from "react";
 import {
-  H2,
   TechnologiesBody,
   TechnologiesUnit,
   TechUnit,
+  Ul,
+  Li,
+  TechUnits,
 } from "./technologiesContainerStyles";
+import { H2, H4 } from "../../App.mainStyles";
 import { SkillsDatabase } from "../Skills/skillsDatabase";
 
 export /* default */ function TechnologiesContainer() {
@@ -14,7 +17,6 @@ export /* default */ function TechnologiesContainer() {
       className="TechnologiesContainer"
       style={{
         position: "relative",
-        paddingTop: "50px",
         paddingBottom: "50px",
         width: "100%",
         backgroundImage:
@@ -28,42 +30,24 @@ export /* default */ function TechnologiesContainer() {
         {SkillsDatabase.map((item, index) => {
           return (
             <TechnologiesUnit key={index}>
-              <ul
-                className="bold"
-                style={{
-                  color: "black",
-                  fontSize: "30px",
-                  fontWeight: "bolder",
-                  fontStyle: "inherit",
-                  paddingBottom: "20px",
-                  textShadow: "5px 5px 10px white",
-                }}
-              >
-                {item.title}
-              </ul>
-              {item.technologies.map((subitem, i) => {
-                return (
-                  <ul>
-                    <li
-                      style={{
-                        listStyleType: "none",
-                        paddingBottom: "10px",
-                        alignItems: "center",
-                      }}
-                    >
+              <Ul>{item.title}</Ul>
+              <TechUnits>
+                {item.technologies.map((subitem, i) => {
+                  return (
+                    <Li>
                       <TechUnit>
                         <img
                           name={"project-" + subitem.name + "-image"}
                           src={subitem.image}
                           alt={subitem.name}
-                          width="80px"
+                          width="80%"
                           // max-height="100%"
                         />
                       </TechUnit>
-                    </li>
-                  </ul>
-                );
-              })}
+                    </Li>
+                  );
+                })}
+              </TechUnits>
             </TechnologiesUnit>
           );
         })}

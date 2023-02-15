@@ -14,6 +14,9 @@ export const Navi = styled.nav`
   justify-content: space-between;
   align-items: center;
   background-color: ${palette.darkBlue}; //
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 export const MenuList = styled.ul`
   list-style: none;
@@ -37,27 +40,42 @@ export const MenuLink = styled(Link)`
   font-size: 25px;
   font-weight: bold;
   cursor: pointer;
-  @media (max-width: 1240px) {
+  @media (max-width: 1200px) {
+    font-size: 23px;
+  }
+  @media (max-width: 850px) {
+    font-size: 22px;
+  }
+  @media (max-width: 650px) {
     font-size: 20px;
   }
   &:hover {
     font-size: 35px;
     color: ${palette.gold};
-    @media (max-width: 1240px) {
+    @media (max-width: 1200px) {
       font-size: 30px;
+    }
+    @media (max-width: 850px) {
+      font-size: 29px;
+    }
+    @media (max-width: 650px) {
+      font-size: 27px;
     }
   }
 `;
 export const BrandName = styled.div`
   width: 60%;
   margin-left: 50px;
-  @media screen and (max-width: 645px) {
-    margin-left: 10px;
-  }
-  @media (max-width: 500px) {
+  @media (max-width: 680px) {
     justify-self: flex-start;
     margin-left: 20px;
     width: 70%;
+  }
+  @media (max-width: 650px) {
+    width: 85%;
+  }
+  @media (max-width: 505px) {
+    width: 50%;
   }
 `;
 export const BrandNameH2 = styled.h2`
@@ -70,14 +88,23 @@ export const BrandNameH2 = styled.h2`
     font-size: 35px;
   }
   @media (max-width: 850px) {
+    font-size: 30px;
+  }
+  @media (max-width: 650px) {
     font-size: 28px;
+  }
+  @media (max-width: 550px) {
+    font-size: 24px;
+  }
+  @media (max-width: 505px) {
+    display: none;
   }
 `;
 //END OF DESKTOP VERSION
 
 //MOBILE VERSION
 export const MobNavi = styled.nav`
-  height: 70px;
+  height: 55px;
   width: 100%;
   margin: auto;
   position: fixed;
@@ -85,6 +112,7 @@ export const MobNavi = styled.nav`
   justify-content: space-between;
   align-items: center;
   display: none;
+  background-color: ${palette.darkBlue}; //
   @media (max-width: 500px) {
     display: flex;
     font-size: 18px;
@@ -93,8 +121,10 @@ export const MobNavi = styled.nav`
 export const Hamburger = styled(RiMenuFill)`
   height: 50px;
   width: 50px;
-  color: ${palette.whiteFull};
-  margin-right: 20px;
+  color: ${palette.white};
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   cursor: pointer;
 `;
 export const MobMenuList = styled.ul`
@@ -103,11 +133,11 @@ export const MobMenuList = styled.ul`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  top: 70px;
-  height: 100vh;
+  top: 55px;
+  height: 40vh;
   width: 100%;
-  padding-bottom: 70px;
-  background-color: ${palette.almostBlack};
+  padding-bottom: 20px;
+  background-color: ${palette.darkBlue};
   z-index: 9;
 `;
 export const MobMenuItem = styled.li`
@@ -117,5 +147,9 @@ export const MobMenuLink = styled(Link)`
   text-decoration: none;
   color: white;
   font-size: 20px;
+  &:hover {
+    font-size: 35px;
+    color: ${palette.gold};
+  }
 `;
 //END OF MOBILE VERSION

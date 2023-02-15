@@ -5,16 +5,37 @@ import {
   MobNavi,
   Hamburger,
   BrandName,
+  BrandNameH2,
 } from "./navbarStyles";
 
 import React, { useState } from "react";
 import { FullName } from "../../assets/text/infoText";
 
 export default function MobileNav() {
+  const links = [
+    {
+      id: 1,
+      path: "/",
+      text: "Domů",
+      name: "mobile nav home",
+    },
+    {
+      id: 2,
+      path: "/skills",
+      text: "O\u00a0mě",
+      name: "mobile nav info",
+    },
+    {
+      id: 3,
+      path: "/works",
+      text: "Projekty",
+      name: "mobile nav projects",
+    },
+  ];
   const [isNavActive, setIsNavActive] = useState(false);
   const [navbarColor, setNavbarColor] = useState(true);
 
-  const changeNavbarColor = () => {
+  /* const changeNavbarColor = () => {
     if (window.scrollY <= 70 && isNavActive === false) {
       setNavbarColor(true);
     } else {
@@ -22,7 +43,7 @@ export default function MobileNav() {
     }
   };
   window.addEventListener("scroll", changeNavbarColor);
-
+ */
   const activeNavbarColor = (isNavActive) => {
     if (isNavActive === true) {
       let thisNavbarColor = true;
@@ -48,33 +69,23 @@ export default function MobileNav() {
     <>
       <MobNavi name="mobile navbar" backgroundStyle={navbarColor}>
         <BrandName name="mobile navbar brand">
-          <h1>{FullName}</h1>
+          <BrandNameH2>{FullName}</BrandNameH2>
         </BrandName>
         {isNavActive && (
           <MobMenuList>
-            <MobMenuItem>
-              <MobMenuLink name="mobile nav home" to="/" onClick={handleClick}>
-                DOMŮ
-              </MobMenuLink>
-            </MobMenuItem>
-            <MobMenuItem>
-              <MobMenuLink
-                name="mobile nav info"
-                to="/skills"
-                onClick={handleClick}
-              >
-                INFO
-              </MobMenuLink>
-            </MobMenuItem>
-            <MobMenuItem>
-              <MobMenuLink
-                name="mobile nav projects"
-                to="/works"
-                onClick={handleClick}
-              >
-                PROJEKTY
-              </MobMenuLink>
-            </MobMenuItem>
+            {links.map((link) => {
+              return (
+                <MobMenuItem key={link.id}>
+                  <MobMenuLink
+                    name={link.name}
+                    to={link.path}
+                    onClick={handleClick}
+                  >
+                    {link.text}
+                  </MobMenuLink>
+                </MobMenuItem>
+              );
+            })}
           </MobMenuList>
         )}
         <Hamburger onClick={hangleNavbarChange} />

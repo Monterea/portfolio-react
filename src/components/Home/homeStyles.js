@@ -6,12 +6,18 @@ export const PageContainer = styled.div`
   top: 55px;
   position: relative;
   flex-direction: column;
-  min-height: 800px;
+  height: 800px;
   width: 100%;
   background-image: url(${landingPageBackground});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media (max-width: 1200px) {
+    height: 750px;
+  }
+  @media (max-width: 1000px) {
+    height: 700px;
+  }
   @media (max-width: 768px) {
     min-height: 90vh;
     padding-top: 20px;
@@ -23,6 +29,12 @@ export const H1home = styled.h1`
   top: 510px;
   width: 100%;
   z-index: 4;
+  @media (max-width: 1200px) {
+    top: 450px;
+  }
+  @media (max-width: 920px) {
+    top: 470px;
+  }
   @media (max-width: 768px) {
     top: 450px;
   }
@@ -41,8 +53,8 @@ export const H1 = styled.h1`
   @media (max-width: 1240px) {
     font-size: 5rem;
   }
-  @media (max-width: 914px) {
-    font-size: 2, 5em;
+  @media (max-width: 920px) {
+    font-size: 60px;
   }
   @media (max-width: 768px) {
     font-size: 2em;
@@ -67,10 +79,10 @@ export const Bubble = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  @media (max-width: 914px) {
+  @media (max-width: 1000px) {
     width: 250px;
     top: 20px;
-    right: 300px;
+    right: 280px;
   }
   @media (max-width: 768px) {
     width: 200px;
@@ -83,11 +95,18 @@ export const Bubble = styled.div`
 `;
 
 export const Hero = styled.div`
-  height: 560px;
-  width: 287px;
-  // height:100%
+  height: 573px;
+  width: 296px;
   padding: 0px;
   z-index: 3;
+  @media (max-width: 920px) {
+    height: 480px;
+    width: auto;
+  }
+  @media (max-width: 360px) {
+    height: 460px;
+    width: auto;
+  }
 `;
 export const HeroBorder = styled.div`
   display: flex;
@@ -95,7 +114,7 @@ export const HeroBorder = styled.div`
   justify-content: flex-end;
   align-items: center;
   height: 580px;
-  width: 330px;
+  width: 340px;
   z-index: 1;
   border: solid;
   border-color: white;
@@ -111,10 +130,26 @@ export const HeroBorder = styled.div`
     transparent,
     ${palette.darkBlue}
   );
+  @media (max-width: 920px) {
+    height: 500px;
+    width: auto;
+  }
+  @media (max-width: 360px) {
+    height: 480px;
+    width: auto;
+  }
 `;
 export const LightsBorderHero = styled.div`
   height: 580px;
   width: 330px;
+  @media (max-width: 920px) {
+    height: 500px;
+    width: auto;
+  }
+  @media (max-width: 360px) {
+    height: 480px;
+    width: auto;
+  }
 `;
 export const RelativeContainer = styled.div`
   display: flex;
@@ -126,6 +161,15 @@ export const RelativeContainer = styled.div`
   padding-top: 50px;
   padding-right: 50px;
   height: 700px;
+  @media (max-width: 1200px) {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 40px;
+    height: 600px;
+  }
+  @media (max-width: 920px) {
+    height: 500px;
+  }
   @media (max-width: 768px) {
     padding-top: 0px;
     padding-left: 20px;

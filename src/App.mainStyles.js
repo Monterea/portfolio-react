@@ -73,10 +73,10 @@ export const H2 = styled.h2`
     font-size: 4em;
   }
   @media (max-width: 1000px) {
-    font-size: 4em;
+    font-size: 3em;
   }
   @media (max-width: 700px) {
-    font-size: 3em;
+    font-size: 2em;
   }
 `;
 export const H2white = styled(H2)`

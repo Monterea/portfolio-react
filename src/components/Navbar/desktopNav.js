@@ -31,7 +31,7 @@ export default function DesktopNav() {
       name: "desktop nav projects",
     },
   ];
-  const [activePage, setActivePage] = useState(null);
+  const [activePage, setActivePage] = useState(1);
   return (
     <>
       <Navi name="desktop navbar">

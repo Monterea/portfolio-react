@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import landingPageBackground from "./assets/pictures/landingPage/landingPageBackground.jpg";
-import purpleNebula6 from "../src/assets/pictures/landingPage/purpleNebula6.jpg";
 
 //COLOR SCHEME
 export const almostBlack = "rgba(10,10,10,1)";
@@ -39,25 +38,9 @@ export const PageContainer = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   @media (max-width: 768px) {
-    background-image: url(${purpleNebula6});
     background-position: top;
     background-repeat: repeat-y;
     background-size: contain;
-  }
-`;
-export const H1 = styled.h1`
-  color: white;
-  font-size: 35px;
-  margin-bottom: 15px;
-  width: 80%;
-  max-width: 1200px;
-  text-align: center;
-  background-color: ${whiteOp03};
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(8px);
-  border-radius: 20px 20px 0 0;
-  @media (max-width: 768px) {
-    font-size: 30px;
   }
 `;
 export const H2 = styled.h2`
@@ -99,6 +82,7 @@ export const H3 = styled.h3`
   }
 `;
 export const H4 = styled.h4`
+  text-align: center;
   font-size: 28px;
   color: ${black};
   font-weight: bolder;
@@ -130,15 +114,13 @@ export const P = styled.p`
   @media (max-width: 1000px) {
     font-size: 16px;
   }
-  @media (max-width: 880px) {
-    font-size: 14px;
-  }
 `;
-
 export const Pwhite = styled(P)`
   color: ${white};
 `;
-
+export const Pleft = styled(P)`
+  text-align: left;
+`;
 export const H5 = styled.h5`
   font-size: 23px;
   padding: 5px;
@@ -157,4 +139,7 @@ export const H5 = styled.h5`
   @media (max-width: 880px) {
     font-size: 15px;
   }
+`;
+export const H5white = styled(H5)`
+  color: ${white};
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import * as pallete from "../../App.mainStyles";
+import * as palette from "../../App.mainStyles";
+import wall from "../../assets/pictures/landingPage/wall.jpg";
 //import landingPageBackgroundDark from "../../assets/pictures/landingPage/landingPageBackgroundDark.jpg";
 /* export const CardsContainer = styled.div`
   width: 100%;
@@ -19,8 +20,8 @@ export const Card = styled.div`
   width: 24%;
   min-width: 400px;
   padding: 10px;
-  border: 3px solid ${pallete.darkBlue};
-  background-color: ${pallete.white};
+  border: 3px solid ${palette.darkBlue};
+  background-color: ${palette.white};
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -37,8 +38,10 @@ export const Card = styled.div`
     min-width: 300px;
   }
   @media (max-width: 616px) {
-    width: 90%;
+    width: 100%;
     min-width: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 `;
 export const CardMedia = styled.div`
@@ -55,12 +58,13 @@ export const TypographyHeader = styled.div`
   min-height: 50px;
   padding-top: 7px;
   justify-content: center;
-  background-color: ${pallete.lightBlue};
+  background-image: url(${wall});
+  // text-shadow: 5px 5px 10px ${palette.gold};
 `;
 
 export const Typography = styled.div`
   width: 100%;
-  background-color: ${pallete.white};
+  background-color: ${palette.white};
   padding: 10px;
   height: 150px;
   display: flex;
@@ -72,7 +76,7 @@ export const CardActions = styled.div`
   width: 100%;
   border-radius: 10px;
   height: 50px;
-  background-color: ${pallete.lightBlue};
+  background-image: url(${wall});
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -81,12 +85,12 @@ export const CardActions = styled.div`
   padding-right: 15px;
 `;
 export const Button = styled.a`
-  color: ${pallete.black};
+  color: ${palette.black};
   text-decoration: none;
   font-weight: bold;
   text-align: center;
   padding-top: 4px;
-  background-color: ${pallete.gold};
+  background-color: ${palette.gold};
   min-width: 80px;
   height: 30px;
   border: 2px solid black;

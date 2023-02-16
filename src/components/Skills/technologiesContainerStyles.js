@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import * as pallete from "../../App.mainStyles";
+import * as palette from "../../App.mainStyles";
 import landingPageBackgroundLight from "../../assets/pictures/landingPage/landingPageBackgroundLight.jpg";
 
 export const TechnologiesBody = styled.div`
@@ -8,11 +8,8 @@ export const TechnologiesBody = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /*   background-image: url(${landingPageBackgroundLight});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-  @media (max-width: 850px) {
+  height: auto;
+  @media (max-width: 879px) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -29,9 +26,9 @@ export const TechnologiesUnit = styled.div`
   justify-content: flex-start;
   //flex-wrap: wrap;
   align-items: center;
-  @media (max-width: 850px) {
+  @media (max-width: 879px) {
     padding-left: 20px;
-    max-height: 100px;
+    height: auto;
     align-items: flex-start;
     padding-top: 10px;
     padding-bottom: 0px;
@@ -39,8 +36,8 @@ export const TechnologiesUnit = styled.div`
 `;
 export const TechUnits = styled.div`
   flex-wrap: wrap;
-  padding-top: 10px;
-  @media (max-width: 850px) {
+  padding-top: 5px;
+  @media (max-width: 879px) {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -51,8 +48,8 @@ export const TechUnits = styled.div`
 export const TechUnit = styled.div`
   width: 105px;
   height: 105px;
-  background-color: ${pallete.white};
-  border: 3px solid ${pallete.darkBlue};
+  background-color: ${palette.white};
+  border: 3px solid ${palette.darkBlue};
   border-radius: 5px;
   padding: 5px;
   display: flex;
@@ -63,47 +60,32 @@ export const TechUnit = styled.div`
     width: 95px;
     height: 95px;
   }
-  @media (max-width: 850px) {
+  @media (max-width: 879px) {
     width: 80px;
     height: 80px;
     margin-right: 10px;
   }
 `;
 export const Li = styled.li`
-  font-size: 22px;
-  color: ${pallete.white};
   list-style-type: none;
   padding-bottom: 10px;
   align-items: center;
-  @media (max-width: 1400px) {
-    font-size: 20px;
-  }
-  @media (max-width: 1218px) {
-    font-size: 18px;
-  }
-  @media (max-width: 1000px) {
-    font-size: 16px;
-  }
-  @media (max-width: 880px) {
-    font-size: 14px;
-  }
 `;
 export const Ul = styled.ul`
   padding-bottom: 20px;
   text-align: center;
-  min-height: 100px;
+  height: 80px;
   font-size: 28px;
-  color: ${pallete.black};
+  color: ${palette.black};
   font-weight: bolder;
-  padding-bottom: 10px;
   @media (max-width: 1400px) {
     font-size: 26px;
   }
   @media (max-width: 1000px) {
     font-size: 24px;
   }
-  @media (max-width: 850px) {
-    min-height: auto;
+  @media (max-width: 879px) {
+    height: auto;
   }
   @media (max-width: 700px) {
     font-size: 22px;

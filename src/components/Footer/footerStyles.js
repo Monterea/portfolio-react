@@ -17,6 +17,7 @@ export const FooterBody = styled.div`
   max-width: 1700px;
   padding: 0 20px;
   padding-top: 20px;
+  padding-bottom: 20px;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "a b c";

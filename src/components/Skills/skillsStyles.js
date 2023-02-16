@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import * as palette from "../../App.mainStyles";
 import landingPageBackgroundDark from "../../assets/pictures/landingPage/landingPageBackgroundDark.jpg";
-import landingPageBackgroundLight from "../../assets/pictures/landingPage/landingPageBackgroundLight.jpg";
+import wall from "../../assets/pictures/landingPage/lightwall.jpg";
+import square from "../../assets/pictures/landingPage/square.jpg";
 
 export const PageContainer = styled.div`
   top: 55px;
@@ -11,9 +12,9 @@ export const PageContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  background-image: url(${landingPageBackgroundLight});
+  background-image: url(${wall});
   background-size: cover;
-  //background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   padding-bottom: 30px;
 `;
@@ -31,7 +32,7 @@ export const DescriptionContainer = styled.div`
   background-position: center;
 `;
 export const HobbiesContainer = styled(DescriptionContainer)`
-  background-image: url(${landingPageBackgroundLight});
+  background-image: url(${wall});
 `;
 export const Body = styled.div`
   position: relative;
@@ -58,9 +59,22 @@ export const BodyLi = styled.div`
 
 export const Ul = styled.ul`
   padding-bottom: 15px;
+  font-size: 22px;
   color: ${palette.white};
 `;
 export const LiJob = styled.li`
   padding-bottom: 15px;
   color: ${palette.white};
+  @media (max-width: 1400px) {
+    font-size: 20px;
+  }
+  @media (max-width: 1218px) {
+    font-size: 18px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 16px;
+  }
+  @media (max-width: 880px) {
+    font-size: 14px;
+  }
 `;

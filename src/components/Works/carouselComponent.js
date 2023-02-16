@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useRef, useEffect } from "react";
-import { H3, P } from "../../App.mainStyles";
+import { Pwhite, H5white } from "../../App.mainStyles";
 import {
   CarouselBody,
   ImageContainer,
@@ -50,20 +50,11 @@ export function CarouselComponent({ carousel }) {
   return (
     <div
       name={"Carousels list body"}
-      className="CarouselsComponent"
+      className="CarouselComponent"
       style={{
         position: "relative",
-        width: "50%",
-        maxWidth: "800px",
-        height: "auto",
-        maxHeight: "800px",
-        display: "flex",
-        flexDirection: "column",
-        padding: "20px",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#15104a",
-        color: "white",
+        width: "100%",
+        height: "100%",
       }}
     >
       <CarouselBody>
@@ -83,9 +74,9 @@ export function CarouselComponent({ carousel }) {
             }}
           />
           <CarouselTexts>
-            <H3 className="bold">{carouselName}</H3>
-            <P>{carouselAddition}</P>
-            <P>{carouselAddition1}</P>
+            <H5white>{carouselName}</H5white>
+            <Pwhite>{carouselAddition}</Pwhite>
+            <Pwhite>{carouselAddition1}</Pwhite>
           </CarouselTexts>
           <CarouselButton
             name="next image"

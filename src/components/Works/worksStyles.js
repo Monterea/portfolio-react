@@ -6,7 +6,7 @@ export const PageContainer = styled.div`
   top: 55px;
   position: relative;
   flex-direction: column;
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 50px;
   min-height: 100vh;
   display: flex;
@@ -19,7 +19,7 @@ export const PageContainer = styled.div`
   background-position: center;
   @media (max-width: 768px) {
     min-height: 80vh;
-    padding-top: 80px;
+    padding-top: 25px;
   }
 `;
 export const HeaderWhite = styled.div`
@@ -34,7 +34,7 @@ export const CaruselsContainer = styled.div`
   top: 55px;
   position: relative;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 30px;
   padding-bottom: 50px;
   min-height: 100vh;
   display: flex;

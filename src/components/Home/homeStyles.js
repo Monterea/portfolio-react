@@ -15,12 +15,13 @@ export const PageContainer = styled.div`
   @media (max-width: 1200px) {
     height: 750px;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 920px) {
     height: 700px;
   }
-  @media (max-width: 768px) {
-    min-height: 90vh;
+  @media (max-width: 770px) {
+    min-height: 80vh;
     padding-top: 20px;
+    height: 600px;
   }
 `;
 
@@ -33,41 +34,34 @@ export const H1home = styled.h1`
     top: 450px;
   }
   @media (max-width: 920px) {
-    top: 470px;
+    top: 420px;
   }
-  @media (max-width: 768px) {
-    top: 450px;
+  @media (max-width: 770px) {
+    top: 350px;
   }
-  @media (max-width: 520px) {
-    top: 410px;
+  @media (max-width: 500px) {
+    top: 310px;
   }
 `;
 export const H1 = styled.h1`
   z-index: 4;
   //  font-family: "Alfa Slab One", cursive;
   color: white;
-
   text-align: center;
   font-size: 6rem;
-  text-shadow: 5px 5px 10px #f5a100;
+  text-shadow: 5px 5px 10px ${palette.gold};
   @media (max-width: 1240px) {
     font-size: 5rem;
   }
   @media (max-width: 920px) {
     font-size: 60px;
   }
-  @media (max-width: 768px) {
-    font-size: 2em;
+  @media (max-width: 770px) {
+    font-size: 50px;
     padding: 20px;
   }
   @media (max-width: 520px) {
     font-size: 40px;
-  }
-`;
-export const H2home = styled(H1home)`
-  font-size: 25px;
-  @media (max-width: 768px) {
-    font-size: 18px;
   }
 `;
 export const Bubble = styled.div`
@@ -100,12 +94,12 @@ export const Hero = styled.div`
   padding: 0px;
   z-index: 3;
   @media (max-width: 920px) {
-    height: 480px;
-    width: auto;
+    height: 481px;
+    width: 249px;
   }
-  @media (max-width: 360px) {
-    height: 460px;
-    width: auto;
+  @media (max-width: 770px) {
+    height: 404px;
+    width: 209px;
   }
 `;
 export const HeroBorder = styled.div`
@@ -131,24 +125,24 @@ export const HeroBorder = styled.div`
     ${palette.darkBlue}
   );
   @media (max-width: 920px) {
-    height: 500px;
-    width: auto;
+    height: 487px;
+    width: 286px;
   }
-  @media (max-width: 360px) {
-    height: 480px;
-    width: auto;
+  @media (max-width: 770px) {
+    height: 409px;
+    width: 240px;
   }
 `;
 export const LightsBorderHero = styled.div`
   height: 580px;
   width: 330px;
   @media (max-width: 920px) {
-    height: 500px;
-    width: auto;
+    height: 487px;
+    width: 286px;
   }
-  @media (max-width: 360px) {
-    height: 480px;
-    width: auto;
+  @media (max-width: 770px) {
+    height: 409px;
+    width: 240px;
   }
 `;
 export const RelativeContainer = styled.div`
@@ -168,13 +162,13 @@ export const RelativeContainer = styled.div`
     height: 600px;
   }
   @media (max-width: 920px) {
+    padding-top: 110px;
     height: 500px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
     padding-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
-    height: 600px;
   }
   @media (max-width: 520px) {
     justify-content: center;

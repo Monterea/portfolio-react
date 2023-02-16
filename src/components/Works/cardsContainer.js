@@ -19,7 +19,6 @@ export default function CardsContainer() {
       className="GalleryBody"
       style={{
         width: "100%",
-        minHeight: "800px",
         justifyContent: "space-evenly",
         alignItems: "flex-start",
         display: "flex",
@@ -43,7 +42,7 @@ export default function CardsContainer() {
           </CardMedia>
           <CardContent name={"project-" + project.id + "descriptions"}>
             <TypographyHeader>
-              <H4 className="bold">{project.title}</H4>
+              <H4>{project.title}</H4>
             </TypographyHeader>
             <Typography>
               <P>{project.description}</P>

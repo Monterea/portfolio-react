@@ -7,7 +7,7 @@ import {
   Li,
   TechUnits,
 } from "./technologiesContainerStyles";
-import { H2, H4 } from "../../App.mainStyles";
+import { H2 } from "../../App.mainStyles";
 import { SkillsDatabase } from "../Skills/skillsDatabase";
 
 export /* default */ function TechnologiesContainer() {
@@ -19,9 +19,9 @@ export /* default */ function TechnologiesContainer() {
         position: "relative",
         paddingBottom: "50px",
         width: "100%",
-        backgroundImage:
-          "../../assets/pictures/landingPage/landingPageBackgroundLight.jpg",
+        backgroundImage: "../../assets/pictures/landingPage/wall1.jpg",
         backgroundSize: "cover",
+        backgroundRepeat: "repeat",
         backgroundPosition: "center",
       }}
     >

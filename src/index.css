@@ -106,13 +106,15 @@ svg:hover {
 }
 
 .selected-page {
-  color: #15104a;
   background-color: #f5a100;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
   border: #f5a100 2px solid;
   border-radius: 10px;
+}
+.selected-page link:hover {
+  color: #15104a;
 }
 @media screen and (max-width: 645px) {
   .selected-page {

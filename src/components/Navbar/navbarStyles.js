@@ -33,6 +33,9 @@ export const MenuItem = styled.li`
   display: inline-block;
   margin-left: 20px;
   cursor: pointer;
+  @media (max-width: 850px) {
+    margin-left: 10px;
+  }
 `;
 export const MenuLink = styled(Link)`
   text-decoration: none;
@@ -52,6 +55,13 @@ export const MenuLink = styled(Link)`
   &:hover {
     font-size: 35px;
     color: ${palette.gold};
+    ${(props) => {
+      if (props.className === "selected-page") {
+        return `
+			color: ${palette.darkBlue};
+			`;
+      }
+    }}
     @media (max-width: 1200px) {
       font-size: 30px;
     }

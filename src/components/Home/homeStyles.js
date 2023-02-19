@@ -27,7 +27,7 @@ export const PageContainer = styled.div`
 
 export const H1home = styled.h1`
   position: absolute;
-  top: 510px;
+  top: 470px;
   width: 100%;
   z-index: 4;
   @media (max-width: 1200px) {
@@ -68,7 +68,7 @@ export const Bubble = styled.div`
   z-index: 4;
   width: 300px;
   position: absolute;
-  top: 40px;
+  top: 30px;
   right: 330px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -152,7 +152,6 @@ export const RelativeContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   padding-left: 50px;
-  padding-top: 50px;
   padding-right: 50px;
   height: 700px;
   @media (max-width: 1200px) {

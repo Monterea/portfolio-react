@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import * as palette from "../../App.mainStyles";
-import landingPageBackgroundLight from "../../assets/pictures/landingPage/landingPageBackgroundLight.jpg";
 
 export const TechnologiesBody = styled.div`
   position: relative;
@@ -9,6 +8,8 @@ export const TechnologiesBody = styled.div`
   justify-content: space-between;
   width: 100%;
   height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
   @media (max-width: 879px) {
     flex-direction: column;
     justify-content: flex-start;
@@ -45,17 +46,19 @@ export const TechUnits = styled.div`
     padding-bottom: 20px;
   }
 `;
-export const TechUnit = styled.div`
+export const TechUnit = styled.span`
   width: 105px;
   height: 105px;
   background-color: ${palette.white};
-  border: 3px solid ${palette.darkBlue};
+  border: 4px double ${palette.darkBlue};
   border-radius: 5px;
   padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
   justify-content: center;
+  box-shadow: 5px 5px 10px ${palette.darkBlue};
   @media (max-width: 1000px) {
     width: 95px;
     height: 95px;

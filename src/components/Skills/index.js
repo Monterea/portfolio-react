@@ -8,7 +8,14 @@ import {
   Addendum,
   TitleDescription,
 } from "../../assets/text/skillsDescription.js";
-import { H2, H2white, P, Pwhite, H4white } from "../../App.mainStyles";
+import {
+  H2,
+  H2white,
+  P,
+  Pwhite,
+  H4white,
+  H2Container,
+} from "../../App.mainStyles";
 import {
   PageContainer,
   DescriptionContainer,
@@ -47,7 +54,9 @@ export default function Skills() {
           </Body>
         </DescriptionContainer>
         <HobbiesContainer>
-          <H2 className="cursive">{TitleHobbies}</H2>
+          <H2Container>
+            <H2 className="cursive">{TitleHobbies}</H2>
+          </H2Container>
           <Body>
             {TextHobbies.map((paragraph) => (
               <P className="cursive">{paragraph}</P>

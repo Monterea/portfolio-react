@@ -2,7 +2,6 @@ import styled from "styled-components";
 import * as palette from "../../App.mainStyles";
 import landingPageBackgroundDark from "../../assets/pictures/landingPage/landingPageBackgroundDark.jpg";
 import wall from "../../assets/pictures/landingPage/lightwall.jpg";
-import square from "../../assets/pictures/landingPage/square.jpg";
 
 export const PageContainer = styled.div`
   top: 55px;
@@ -11,6 +10,7 @@ export const PageContainer = styled.div`
   min-height: 100vh;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   width: 100%;
   background-image: url(${wall});
   background-size: cover;

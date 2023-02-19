@@ -2,9 +2,12 @@ import styled from "styled-components";
 import * as palette from "../../App.mainStyles";
 import wall from "../../assets/pictures/landingPage/wall.jpg";
 
+export const CarouselsBody = styled.div`
+  padding: 20px;
+`;
+
 export const Row = styled.div`
   position: relative;
-  padding: 20px;
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
@@ -16,7 +19,7 @@ export const Row = styled.div`
   @media (max-width: 616px) {
     max-height: 1400px;
   }
-  &:nth-child(2) {
+  &:nth-child(1) {
     flex-direction: row;
     @media (max-width: 616px) {
       //  flex-wrap: wrap;
@@ -24,14 +27,14 @@ export const Row = styled.div`
       width: 100%;
     }
   }
-  &:nth-child(3) {
+  &:nth-child(2) {
     flex-direction: row-reverse;
     @media (max-width: 616px) {
       flex-direction: column-reverse;
       width: 100%;
     }
   }
-  &:nth-child(4) {
+  &:nth-child(3) {
     flex-direction: row;
     @media (max-width: 616px) {
       flex-direction: column-reverse;

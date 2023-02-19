@@ -8,6 +8,7 @@ import Inventory from "../../assets/pictures/projects/Inventory.jpg";
 import WeatherApp from "../../assets/pictures/projects/WeatherApp.jpg";
 import Schoolapp from "../../assets/pictures/projects/schoolapp.jpg";
 import Javaweatherapp from "../../assets/pictures/projects/javaweatherapp.jpg";
+import Portfolio from "../../assets/pictures/projects/portfolio.jpg";
 
 export const ProjectsDatabase = [
   {
@@ -26,7 +27,7 @@ export const ProjectsDatabase = [
   {
     id: 2,
     title: "Cvičný web",
-    description: "webové stránky v Bootstrapu vytvořené v kurzu",
+    description: "responzivní webové stránky v Bootstrapu vytvořené v kurzu",
     description1: "časové zadání: 8 hodin",
     description2: "",
     technology: "HTML / CSS / BOTSTRAP",
@@ -132,5 +133,14 @@ export const ProjectsDatabase = [
     name: "web WeatherApp v JavaSpring",
     gitHub: "https://github.com/Monterea/JavaSpringWeatherApp",
     link: "",
+  },
+  {
+    id: 11,
+    title: "Portfólio",
+    description: "osobní responzivní www stránky",
+    technology: "REACT",
+    image: Portfolio,
+    name: "osobní www stránky",
+    gitHub: "https://github.com/Monterea/portfolio-react",
   },
 ];

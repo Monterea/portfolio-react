@@ -123,3 +123,25 @@ svg:hover {
     width: 0px;
   }
 }
+
+.hovertext:before {
+  /*   position: relative; */
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  width: 140px;
+  background-color: #15104a;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: opacity 2s ease-in-out;
+  transform: translateY(60px);
+  position: absolute;
+  z-index: 1;
+}
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}

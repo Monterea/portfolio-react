@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import landingPageBackground from "./assets/pictures/landingPage/landingPageBackground.jpg";
+import retro from "../src/assets/pictures/landingPage/retro.png";
 
 //COLOR SCHEME
 export const almostBlack = "rgba(10,10,10,1)";
@@ -43,24 +44,41 @@ export const PageContainer = styled.div`
     background-size: contain;
   }
 `;
+export const H2Container = styled.div`
+  width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  background-image: url(${retro});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 8/0, 3;
+`;
 export const H2 = styled.h2`
   color: ${black};
   font-size: 5em;
   font-weight: bold;
   text-align: center;
-  padding: 3px;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-shadow: 5px 5px 10px ${gold};
   @media (max-width: 1400px) {
     font-size: 4em;
   }
   @media (max-width: 1000px) {
+    padding-bottom: 5px;
+  }
+  @media (max-width: 1000px) {
     font-size: 3em;
+    padding-bottom: 5px;
   }
   @media (max-width: 700px) {
     font-size: 2em;
-  }
+  } ;
 `;
 export const H2white = styled(H2)`
   color: ${white};
@@ -81,6 +99,7 @@ export const H3 = styled.h3`
     font-size: 28px;
   }
 `;
+
 export const H4 = styled.h4`
   text-align: center;
   font-size: 28px;

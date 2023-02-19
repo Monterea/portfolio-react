@@ -7,7 +7,7 @@ import {
   Li,
   TechUnits,
 } from "./technologiesContainerStyles";
-import { H2 } from "../../App.mainStyles";
+import { H2Container, H2 } from "../../App.mainStyles";
 import { SkillsDatabase } from "../Skills/skillsDatabase";
 
 export /* default */ function TechnologiesContainer() {
@@ -16,16 +16,21 @@ export /* default */ function TechnologiesContainer() {
       name={"projects list body"}
       className="TechnologiesContainer"
       style={{
-        position: "relative",
         paddingBottom: "50px",
         width: "100%",
         backgroundImage: "../../assets/pictures/landingPage/wall1.jpg",
         backgroundSize: "cover",
         backgroundRepeat: "repeat",
         backgroundPosition: "center",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "flex-start",
       }}
     >
-      <H2>Technologie</H2>
+      <H2Container>
+        <H2>Technologie</H2>
+      </H2Container>
       <TechnologiesBody>
         {SkillsDatabase.map((item, index) => {
           return (
@@ -35,7 +40,7 @@ export /* default */ function TechnologiesContainer() {
                 {item.technologies.map((subitem, i) => {
                   return (
                     <Li>
-                      <TechUnit>
+                      <TechUnit className="hovertext" data-hover={subitem.name}>
                         <img
                           name={"project-" + subitem.name + "-image"}
                           src={subitem.image}

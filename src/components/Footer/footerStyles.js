@@ -121,6 +121,11 @@ export const ButtonsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  @media (max-width: 550px) {
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 export const PopupButton = styled.button`
   background-color: ${palette.darkBlue};

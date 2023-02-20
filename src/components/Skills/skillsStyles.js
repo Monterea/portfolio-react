@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import * as palette from "../../App.mainStyles";
 import landingPageBackgroundDark from "../../assets/pictures/landingPage/landingPageBackgroundDark.jpg";
-import wall from "../../assets/pictures/landingPage/lightwall.jpg";
+import bluewall from "../../assets/pictures/landingPage/bluewall.jpg";
 
 export const PageContainer = styled.div`
   top: 55px;
@@ -12,7 +12,7 @@ export const PageContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  background-image: url(${wall});
+  background-image: url(${bluewall});
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -32,7 +32,7 @@ export const DescriptionContainer = styled.div`
   background-position: center;
 `;
 export const HobbiesContainer = styled(DescriptionContainer)`
-  background-image: url(${wall});
+  background-image: url(${bluewall});
 `;
 export const Body = styled.div`
   position: relative;

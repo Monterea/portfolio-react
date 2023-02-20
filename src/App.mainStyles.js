@@ -88,7 +88,7 @@ export const H3 = styled.h3`
   font-size: 35px;
   font-weight: bolder;
   padding-bottom: 20px;
-  text-shadow: 5px 5px 10px ${white};
+  text-shadow: 5px 5px 10px ${gold};
   @media (max-width: 1400px) {
     font-size: 33px;
   }

@@ -28,10 +28,14 @@ export const ImageContainer = styled.div`
   width: 100%;
   height: 90%;
   z-index: 2;
-  @media (max-width: 616px) {
+
+  @media (max-width: 1130px) {
     height: 80%;
     align-self: flex-start;
     justify-content: flex-start;
+  }
+  @media (max-width: 360px) {
+    height: auto;
   }
 `;
 export const Image = styled.img`
@@ -45,12 +49,20 @@ export const OthersContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  border: none;
   justify-content: space-between;
   width: 100%;
   height: 10%;
   z-index: 2;
+  @media (max-width: 1130px) {
+    width: 80%;
+    height: 20%;
+  }
   @media (max-width: 616px) {
     height: 20%;
+  }
+  @media (max-width: 360px) {
+    height: auto;
   }
 `;
 export const CarouselTexts = styled.div`
@@ -65,8 +77,8 @@ export const CarouselTexts = styled.div`
 export const CarouselButton = styled.button`
   position: absolute;
   // display: flex;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   aspect-ratio: 1/1;
   background-color: ${palette.white};
   background-image: url(${arrow});
@@ -85,13 +97,13 @@ export const CarouselButton = styled.button`
     background-color: ${palette.gold};
   }
   :nth-child(1) {
-    right: calc(100% - 10px);
-    top: calc(100% - 55px);
+    right: calc(100% - 40px);
+    top: calc(100% - 40px);
     //   transform: rotate(180deg);
   }
   :nth-child(3) {
-    left: calc(100% - 10px);
-    top: calc(100% - 55px);
+    left: calc(100% - 40px);
+    top: calc(100% - 40px);
     transform: rotate(180deg);
   }
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import * as palette from "../../App.mainStyles";
-import wall from "../../assets/pictures/landingPage/wall.jpg";
+import bluewall from "../../assets/pictures/landingPage/bluewall.jpg";
 
 export const CarouselsBody = styled.div`
   padding: 20px;
@@ -71,7 +71,7 @@ export const Delineation = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   width: 50%;
-  background-image: url(${wall});
+  background-image: url(${bluewall});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

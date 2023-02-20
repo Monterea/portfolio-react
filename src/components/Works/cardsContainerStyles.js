@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import * as palette from "../../App.mainStyles";
-import wall from "../../assets/pictures/landingPage/wall.jpg";
-//import landingPageBackgroundDark from "../../assets/pictures/landingPage/landingPageBackgroundDark.jpg";
+import bluewall from "../../assets/pictures/landingPage/bluewall.jpg";
+import landingPageBackgroundLight from "../../assets/pictures/landingPage/landingPageBackgroundLight.jpg";
 /* export const CardsContainer = styled.div`
   width: 100%;
   padding: 10px;
@@ -18,7 +18,6 @@ import wall from "../../assets/pictures/landingPage/wall.jpg";
 export const Card = styled.div`
   max-width: 600px;
   width: 24%;
-  min-width: 400px;
   padding: 10px;
   border: 3px solid ${palette.darkBlue};
   background-color: ${palette.white};
@@ -37,7 +36,7 @@ export const Card = styled.div`
     width: 48%;
     min-width: 300px;
   }
-  @media (max-width: 616px) {
+  @media (max-width: 620px) {
     width: 100%;
     min-width: 250px;
     margin-left: 20px;
@@ -58,25 +57,32 @@ export const TypographyHeader = styled.div`
   min-height: 50px;
   padding-top: 7px;
   justify-content: center;
-  background-image: url(${wall});
+  background-image: url(${bluewall});
+  display: flex;
   // text-shadow: 5px 5px 10px ${palette.gold};
 `;
 
 export const Typography = styled.div`
   width: 100%;
   background-color: ${palette.white};
-  padding: 10px;
-  height: 150px;
+  padding: 5px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 1285px) {
+    height: 170px;
+  }
+  @media (max-width: 1000px) {
+    height: 130px;
+  }
 `;
 
 export const CardActions = styled.div`
   width: 100%;
   border-radius: 10px;
   height: 50px;
-  background-image: url(${wall});
+  background-image: url(${bluewall});
   display: flex;
   flex-direction: row;
   align-items: center;

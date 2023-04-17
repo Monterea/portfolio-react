@@ -2,10 +2,10 @@ import React from "react";
 import { TechnologiesContainer } from "./technologiesContainer";
 import { TitleHobbies, TextHobbies } from "../../assets/text/hobbiesText";
 import {
-  TextDescription,
-  TitleJobs,
+  TextDescriptionNew,
+  /*   TitleJobs,
   Jobs,
-  Addendum,
+  Addendum, */
   TitleDescription,
 } from "../../assets/text/skillsDescription.js";
 import {
@@ -13,7 +13,7 @@ import {
   H2white,
   P,
   Pwhite,
-  H4white,
+  /*   H4white, */
   H2Container,
 } from "../../App.mainStyles";
 import {
@@ -21,9 +21,9 @@ import {
   DescriptionContainer,
   HobbiesContainer,
   Body,
-  BodyLi,
+  /*   BodyLi,
   LiJob,
-  Ul,
+  Ul, */
 } from "./skillsStyles";
 
 export default function Skills() {
@@ -35,11 +35,11 @@ export default function Skills() {
         <DescriptionContainer>
           <H2white>{TitleDescription}</H2white>
           <Body>
-            {TextDescription.map((paragraph) => (
+            {TextDescriptionNew.map((paragraph) => (
               <Pwhite>{paragraph}</Pwhite>
             ))}
           </Body>
-          <Body>
+          {/* <Body>
             <Ul>
               <H4white>{TitleJobs}</H4white>
             </Ul>
@@ -51,7 +51,7 @@ export default function Skills() {
             {Addendum.map((paragraph) => (
               <Pwhite>{paragraph}</Pwhite>
             ))}
-          </Body>
+          </Body> */}
         </DescriptionContainer>
         <HobbiesContainer>
           <H2Container>

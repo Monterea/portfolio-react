@@ -1,1 +1,1 @@
-export const pageAdress = "stumi.eu";
+export const pageAdress = "stumi.kvalitne.cz/";
